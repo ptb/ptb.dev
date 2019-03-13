@@ -15,14 +15,13 @@
   "name": "@amory/lodash",
   "private": true,
   "scripts": {
-    "build": "run-s build:rollup build:terser build:header build:chomp clean",
+    "build": "run-s build:build build:rollup build:terser build:header build:chomp clean",
+    "build:build": "f () { lodash modularize exports=es -o ./esm || exit 0; }; f",
     "build:chomp": "perl -pi -e 'chomp if eof' index.mjs",
     "build:header": "sed -i '' -e '1s;^;/*! @copyright JS Foundation | @license MIT | @link lodash.com | @version 4.17.11 *//* eslint-disable */;' index.mjs",
     "build:rollup": "rollup -c",
     "build:terser": "terser -c -m -o index.mjs --toplevel index.mjs",
-    "clean": "rm -rf esm node_modules yarn.lock",
-    "postinstall": "f () { lodash modularize exports=es -o ./esm || exit 0; }; f",
-    "preinstall": "f () { rm -rf ./esm || exit 0; }; f"
+    "clean": "rm -rf esm node_modules yarn.lock"
   },
   "version": "2019.3.13-0"
 }
