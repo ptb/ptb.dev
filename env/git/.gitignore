@@ -6,4 +6,6 @@
 /.nyc_output
 /.vscode
 
+/jsconfig.json
+
 node_modules

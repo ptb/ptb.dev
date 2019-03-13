@@ -117,6 +117,7 @@
     "env/git",
     "env/node",
     "env/lodash",
+    "env/typescript",
     "env/vscode"
   ]
 }
