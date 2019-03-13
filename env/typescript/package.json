@@ -1,0 +1,10 @@
+{
+  "dependencies": {},
+  "name": "@amory/typescript",
+  "private": true,
+  "scripts": {
+    "postinstall": "f () { ln -s env/typescript/jsconfig.json ../.. || exit 0; }; f",
+    "preinstall": "f () { rm ../../jsconfig.json || exit 0; }; f"
+  },
+  "version": "2019.3.13-0"
+}
