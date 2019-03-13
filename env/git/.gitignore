@@ -1,0 +1,8 @@
+# -*- mode: gitignore; -*-
+
+/.flowconfig
+/.gitignore
+/.node-version
+/.vscode
+
+node_modules

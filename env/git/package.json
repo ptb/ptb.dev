@@ -1,0 +1,10 @@
+{
+  "dependencies": {},
+  "name": "@amory/git",
+  "private": true,
+  "scripts": {
+    "postinstall": "f () { ln -s env/git/.gitignore ../.. || exit 0; }; f",
+    "preinstall": "f () { rm ../../.gitignore || exit 0; }; f"
+  },
+  "version": "2019.3.13-0"
+}

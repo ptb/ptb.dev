@@ -1,0 +1,90 @@
+{
+  "author": "Peter T Bosse II <ptb@ioutime.com> (http://ptb2.me/)",
+  "ava": {
+    "babel": false,
+    "extensions": [
+      "js"
+    ],
+    "failFast": false,
+    "files": [
+      "src/**/*.test.js"
+    ],
+    "require": [
+      "esm"
+    ],
+    "sources": [
+      "src/**/*.js"
+    ],
+    "verbose": true
+  },
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          "pragma": "h",
+          "pragmaFrag": "Fragment"
+        }
+      ]
+    ]
+  },
+  "browserslist": [
+    "> 0.5%",
+    "and_chr >= 29",
+    "and_ff >= 57",
+    "and_qq >= 1.2",
+    "and_uc >= 11.4",
+    "android >= 5",
+    "baidu >= 7.12",
+    "bb >= 10",
+    "chrome >= 29",
+    "edge >= 12",
+    "firefox >= 27",
+    "ie >= 11",
+    "ie_mob >= 11",
+    "ios_saf >= 5",
+    "last 2 versions",
+    "not dead",
+    "op_mob >= 12.1",
+    "opera >= 16",
+    "safari >= 7",
+    "samsung >= 4"
+  ],
+  "devDependencies": {
+    "@amory/eslint-config": "latest",
+    "esm": "3.2.16"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@amory"
+    ]
+  },
+  "license": "Apache-2.0",
+  "nodemonConfig": {
+    "events": {
+      "start": "echo \"\\x1Bc\""
+    },
+    "exec": "yarn watch",
+    "ext": "js"
+  },
+  "nyc": {
+    "all": true,
+    "exclude": [
+      "src/**/*.test.js"
+    ],
+    "extension": [
+      ".js"
+    ]
+  },
+  "private": true,
+  "scripts": {
+    "clean": "git clean -fdX"
+  },
+  "workspaces": [
+    "env/flow",
+    "env/git"
+  ]
+}

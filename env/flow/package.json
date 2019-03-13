@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "flow-bin": "0.94.0"
+  },
+  "name": "@amory/flow",
+  "private": true,
+  "scripts": {
+    "postinstall": "f () { ln -s env/flow/.flowconfig ../.. || exit 0; }; f",
+    "preinstall": "f () { rm ../../.flowconfig || exit 0; }; f"
+  },
+  "version": "2019.3.13-0"
+}
