@@ -24,7 +24,6 @@ esproposal.export_star_as=warn
 esproposal.nullish_coalescing=warn
 esproposal.optional_chaining=warn
 include_warnings=true
-lazy_mode=ide
 
 [untyped]
 src/vendor/*.js
