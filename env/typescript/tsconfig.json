@@ -5,9 +5,12 @@
     "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",
     "lib": [
+      "es5",
+      "es2015",
+      "es2016.array.include",
       "es2017.object"
     ],
-    "module": "commonjs",
+    "module": "es6",
     "moduleResolution": "node",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
@@ -20,6 +23,7 @@
   },
   "exclude": [
     "src/**/*.test.js",
+    "src/vendor/*.js",
     "node_modules/*"
   ],
   "include": [
