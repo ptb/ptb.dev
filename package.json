@@ -66,6 +66,9 @@
       "@amory"
     ]
   },
+  "eslintIgnore": [
+    "src/vendor/*.js"
+  ],
   "license": "(Apache-2.0 OR MIT)",
   "nodemonConfig": {
     "events": {
@@ -77,7 +80,8 @@
   "nyc": {
     "all": true,
     "exclude": [
-      "src/**/*.test.js"
+      "src/**/*.test.js",
+      "src/vendor/*.js"
     ],
     "extension": [
       ".js"
@@ -113,9 +117,6 @@
     "env/git",
     "env/node",
     "env/lodash",
-    "env/react/dom",
-    "env/react/dom/server",
-    "env/react/only",
     "env/vscode"
   ]
 }
