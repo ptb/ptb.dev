@@ -13,6 +13,7 @@ src/**/*.js
 [lints]
 all=warn
 dynamic-export=off
+untyped-import=off
 
 [options]
 emoji=true
@@ -26,6 +27,7 @@ include_warnings=true
 lazy_mode=ide
 
 [untyped]
+src/vendor/*.js
 
 [version]
 ^0.94.0
