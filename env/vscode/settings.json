@@ -1,0 +1,9 @@
+{
+  "editor.formatOnType": false,
+  "eslint.options": {
+    "configFile": "node_modules/@amory/eslint-config/.eslintrc.json"
+  },
+  "eslint.runtime": "/usr/local/node/shims/node",
+  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
+  "prettier.eslintIntegration": true
+}
