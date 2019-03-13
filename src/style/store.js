@@ -1,10 +1,10 @@
-/* @flow strict */ /* @ts-check */
+/* @flow strict *//* @ts-check */
 
 /* ::
-type StoreIdType = Array < string > | ?string
+type StoreIdType = Array < string > | string
 
 type StoreValueType = {|
-  id: StoreIdType,
+  id: ?StoreIdType,
   key: string,
   media: string,
   rule: ?string
@@ -30,5 +30,5 @@ export type { MediaType, StoreIdType, StoreType, StoreValueType }
  */
 
 export const store /* : StoreType */ = ((
-  /** @type {StoreType} */ s /* : StoreType */
-) /* : StoreType */ => s) (new Map ())
+  /** @type {StoreType} */ STORE /* : StoreType */
+) /* : StoreType */ => STORE) (new Map ())

@@ -1,4 +1,4 @@
-/* @flow strict */ /* flowlint unclear-type: off */ /* @ts-check */
+/* @flow strict *//* @ts-check */
 
 /* ::
 type PubFnType = (value: mixed) => Array < mixed >
