@@ -1,0 +1,24 @@
+{
+  "browserslist": [
+    "> 0.5%",
+    "and_chr >= 29",
+    "and_ff >= 57",
+    "and_qq >= 1.2",
+    "and_uc >= 11.4",
+    "android >= 5",
+    "baidu >= 7.12",
+    "bb >= 10",
+    "chrome >= 29",
+    "edge >= 12",
+    "firefox >= 27",
+    "ie >= 11",
+    "ie_mob >= 11",
+    "ios_saf >= 5",
+    "last 2 versions",
+    "not dead",
+    "op_mob >= 12.1",
+    "opera >= 16",
+    "safari >= 7",
+    "samsung >= 4"
+  ]
+}
