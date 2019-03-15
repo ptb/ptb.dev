@@ -1,0 +1,13 @@
+{
+  "editor.formatOnType": false,
+  "eslint.options": {
+    "configFile": "node_modules/@amory/eslint-config/.eslintrc.json",
+    "plugins": [
+      "flowtype-comment"
+    ]
+  },
+  "eslint.runtime": "/usr/local/node/shims/node",
+  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
+  "javascript.implicitProjectConfig.checkJs": true,
+  "prettier.eslintIntegration": true
+}

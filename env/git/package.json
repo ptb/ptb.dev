@@ -1,0 +1,11 @@
+{
+  "name": "@amory/git",
+  "private": true,
+  "scripts": {
+    "postinstall": "npx npm-run-all --serial postinstall:*",
+    "postinstall:gitignore": "f () { ln -s env/git/.gitignore ../.. || exit 0; }; f",
+    "postinstall:packagejson": "f () { npx -p @amory/merge-json -c 'merge-json ../../package.json .package.json' || exit 0; }; f",
+    "preinstall": "f () { rm ../../.gitignore || exit 0; }; f"
+  },
+  "version": "2019.3.15-0"
+}
