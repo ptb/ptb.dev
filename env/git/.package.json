@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "clean": "f () { git clean -e '!/src/*' -dfX || exit 0; }; f"
+  }
+}
