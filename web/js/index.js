@@ -1,6 +1,6 @@
 Promise.all ([
-  import ("./react.js"),
-  import ("./react-dom.js")
+  import ("./vendor/react.js"),
+  import ("./vendor/react-dom.js")
 ]).then (([
   { "createElement": h, Fragment },
   { hydrate }

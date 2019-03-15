@@ -5,7 +5,7 @@
     "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",
     "lib": [
-      // "dom",
+      "dom",
       // "dom.iterable",
       "es5",
       // "es6",
@@ -38,7 +38,7 @@
       // "scripthost",
       // "webworker"
     ],
-    "module": "es6",
+    "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
