@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "flow-bin": "0.95.1",
+    "flow-coverage-report": "0.6.1"
+  },
+  "name": "@amory/flow",
+  "private": true,
+  "scripts": {
+    "postinstall": "npx npm-run-all --parallel postinstall:*",
+    "postinstall:flowconfig": "f () { ln -s env/flow/.flowconfig ../.. || exit 0; }; f",
+    "postinstall:packagejson": "npx -p @amory/merge-json -c 'merge-json ../../package.json .package.json'",
+    "preinstall": "f () { rm ../../.flowconfig || exit 0; }; f"
+  },
+  "version": "2019.3.15-0"
+}
