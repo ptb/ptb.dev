@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "npm-run-all": "4.1.5",
+    "rollup": "1.6.0",
+    "rollup-plugin-commonjs": "9.2.1",
+    "rollup-plugin-node-resolve": "4.0.1",
+    "rollup-plugin-replace": "2.1.0",
+    "rollup-plugin-terser": "4.0.4",
+    "terser": "3.17.0"
+  },
+  "license": "MIT",
+  "module": "graphql.js",
+  "name": "@amory/graphql",
+  "private": true,
+  "scripts": {
+    "build": "run-s build:rollup build:header1 build:header2 build:chomp1 build:chomp2 clean",
+    "build:chomp1": "perl -pi -e 'chomp if eof' index.js",
+    "build:chomp2": "perl -pi -e 'chomp if eof' graphql.js",
+    "build:clone": "git clone https://github.com/graphql/graphql-js.git",
+    "build:header1": "sed -i '' -e '1s;^;/*! @copyright Facebook, Inc. | @license MIT | @link graphql.org | @version 14.1.1 *//* eslint-disable */;' index.js",
+    "build:header2": "sed -i '' -e '1s;^;/*! @copyright Facebook, Inc. | @license MIT | @link graphql.org | @version 14.1.1 *//* eslint-disable */;' graphql.js",
+    "build:rollup": "rollup -c",
+    "clean": "rm -rf graphql-js node_modules yarn.lock"
+  },
+  "version": "2019.3.15-0"
+}
