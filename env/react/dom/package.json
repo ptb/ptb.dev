@@ -16,10 +16,10 @@
   "scripts": {
     "build": "run-s build:rollup build:terser build:header build:chomp clean",
     "build:chomp": "perl -pi -e 'chomp if eof' react-dom.js",
-    "build:header": "sed -i '' -e '1s;^;/*! @copyright Facebook, Inc. | @license MIT | @link reactjs.org | @version 16.8.4 *//* eslint-disable */;' -e 's;from\"react\";from\"./react.js\";' react-dom.js",
+    "build:header": "sed -i '' -e '1s;^;/*! @copyright Facebook, Inc. | @license MIT | @link reactjs.org | @version 16.8.6 *//* eslint-disable */;' -e 's;from\"react\";from\"./react.js\";' react-dom.js",
     "build:rollup": "rollup -c",
     "build:terser": "terser -c -m -o react-dom.js --toplevel react-dom.js",
     "clean": "rm -rf node_modules yarn.lock"
   },
-  "version": "2019.3.15-0"
+  "version": "2019.3.28-0"
 }
