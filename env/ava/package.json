@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "ava": "1.4.1",
-    "esm": "3.2.21",
+    "esm": "3.2.22",
     "sinon": "7.3.1"
   },
   "name": "@amory/ava",
