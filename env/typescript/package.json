@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "jsdoc": "3.6.2",
+    "jsdoc": "3.6.3",
     "tsd-jsdoc": "2.3.1",
     "tslint": "5.18.0",
     "typescript": "3.5.3"
