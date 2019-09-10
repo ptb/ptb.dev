@@ -67,7 +67,7 @@
     "nyc": "14.1.1",
     "sinon": "7.4.2",
     "tsd-jsdoc": "2.4.0",
-    "tslint": "5.19.0",
+    "tslint": "5.20.0",
     "typescript": "3.6.2"
   },
   "engines": {
