@@ -68,7 +68,7 @@
     "sinon": "7.5.0",
     "tsd-jsdoc": "2.4.0",
     "tslint": "5.20.1",
-    "typescript": "3.7.3"
+    "typescript": "3.7.4"
   },
   "engines": {
     "node": ">=8"
