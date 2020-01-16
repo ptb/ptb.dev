@@ -2,7 +2,7 @@
   "dependencies": {
     "ava": "2.4.0",
     "esm": "3.2.25",
-    "sinon": "8.0.4"
+    "sinon": "8.1.0"
   },
   "name": "@amory/ava",
   "private": true,
