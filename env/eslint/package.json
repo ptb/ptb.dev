@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@amory/eslint-config": "latest",
-    "babel-eslint": "10.0.3",
+    "babel-eslint": "10.1.0",
     "eslint": "6.8.0",
     "eslint-plugin-compat": "3.5.1",
     "eslint-plugin-flowtype": "4.6.0",
