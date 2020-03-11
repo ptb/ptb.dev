@@ -2,7 +2,7 @@
   "dependencies": {
     "jsdoc": "3.6.3",
     "tsd-jsdoc": "2.4.0",
-    "tslint": "5.20.1",
+    "tslint": "6.1.0",
     "typescript": "3.8.3"
   },
   "name": "@amory/typescript",
