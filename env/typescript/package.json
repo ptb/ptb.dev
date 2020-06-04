@@ -3,7 +3,7 @@
     "jsdoc": "3.6.4",
     "tsd-jsdoc": "2.5.0",
     "tslint": "6.1.2",
-    "typescript": "3.9.3"
+    "typescript": "3.9.5"
   },
   "name": "@amory/typescript",
   "private": true,
