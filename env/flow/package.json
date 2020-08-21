@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "flow-bin": "0.131.0",
+    "flow-bin": "0.132.0",
     "flow-coverage-report": "0.7.0"
   },
   "name": "@amory/flow",
