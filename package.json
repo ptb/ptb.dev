@@ -54,8 +54,8 @@
   ],
   "devDependencies": {
     "@amory/eslint-config": "latest",
-    "@babel/cli": "7.11.6",
-    "@babel/core": "7.11.6",
+    "@babel/cli": "7.12.0",
+    "@babel/core": "7.12.0",
     "@babel/plugin-syntax-jsx": "7.10.4",
     "@babel/plugin-transform-flow-comments": "7.10.4",
     "@babel/plugin-transform-react-jsx": "7.10.4",
