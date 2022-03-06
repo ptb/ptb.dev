@@ -59,7 +59,7 @@
     "@babel/plugin-syntax-jsx": "7.16.7",
     "@babel/plugin-transform-flow-comments": "7.16.7",
     "@babel/plugin-transform-react-jsx": "7.17.3",
-    "ava": "4.0.1",
+    "ava": "4.1.0",
     "esm": "3.2.25",
     "jsdoc": "3.6.10",
     "nodemon": "2.0.15",
