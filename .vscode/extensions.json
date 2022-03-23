@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "christianarduino.snake-case-to-camel-case",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "eriklynd.json-tools",
+    "ptb.ptb-css-to-js",
+    "richie5um2.vscode-sort-json",
+    "rvest.vs-code-prettier-eslint",
+    "wallabyjs.wallaby-vscode"
+  ]
+}
