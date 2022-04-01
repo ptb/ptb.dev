@@ -2,13 +2,13 @@ import { StrictMode } from "react"
 import { renderToString } from "react-dom/server"
 import { dangerouslySkipEscape, escapeInject } from "vite-plugin-ssr"
 
-import { PageContextProvider } from "../context.jsx"
+import { PageContextProvider } from "../contexts/context.jsx"
 
 /**
   @see {@link https://vite-plugin-ssr.com/data-fetching}
  */
 
-export const passToClient = ["pageProps", "urlPathname"]
+export const passToClient = ["pageProps", "urlParsed", "urlPathname"]
 
 /**
   @typedef {
@@ -31,12 +31,15 @@ export const passToClient = ["pageProps", "urlPathname"]
  */
 
 export function render (context) {
-  const { Page, pageProps } = context
+  const { Page, pageProps, urlParsed } = context
 
   const children = renderToString(
     <StrictMode>
       <PageContextProvider context={context}>
-        <Page {...pageProps} />
+        <Page
+          urlParsed={urlParsed}
+          {...pageProps}
+        />
       </PageContextProvider>
     </StrictMode>
   )

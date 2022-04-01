@@ -14,7 +14,7 @@ import { createPageRenderer } from "vite-plugin-ssr"
 
 /**
   Start vite app server.
-    
+
   @returns {Promise<void>}
  */
 

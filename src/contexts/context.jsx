@@ -7,7 +7,7 @@ import { createContext, useContext } from "react"
 
 /**
   @typedef {typeof import ("react")} React
- 
+
   @typedef {
     import ("vite-plugin-ssr/client").PageContextBuiltInClient
   } PageContextBuiltInClient

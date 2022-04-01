@@ -2,7 +2,7 @@ import { StrictMode } from "react"
 import { hydrate } from "react-dom"
 import { getPage } from "vite-plugin-ssr/client"
 
-import { PageContextProvider } from "../context.jsx"
+import { PageContextProvider } from "../contexts/context.jsx"
 
 import "../styles.css"
 
@@ -28,15 +28,18 @@ async function render () {
       await getPage()
     )
 
-  const { Page, pageProps } = context
+  const { Page, pageProps, urlParsed } = context
 
   hydrate(
     <StrictMode>
       <PageContextProvider context={context}>
-        <Page {...pageProps} />
+        <Page
+          urlParsed={urlParsed}
+          {...pageProps}
+        />
       </PageContextProvider>
     </StrictMode>,
-    document.getElementById("root")
+    /** @type {HTMLElement} */ (document.getElementById("root"))
   )
 }
 

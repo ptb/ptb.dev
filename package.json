@@ -5,9 +5,14 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@types/compression": "latest",
+    "@types/express": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
-    "@vitejs/plugin-react": "1.2.0",
+    "@vitejs/plugin-react": "1.3.0",
     "compression": "1.7.4",
     "cross-env": "7.0.3",
     "eslint": "7.32.0",
@@ -26,10 +31,13 @@
     "prettier-eslint": "latest",
     "prettier-eslint-cli": "latest",
     "typescript": "latest",
-    "vite": "2.8.6",
+    "vite": "2.9.1",
     "vite-plugin-babel-macros": "1.0.6",
-    "vite-plugin-ssr": "0.3.60"
+    "vite-plugin-ssr": "0.3.61"
   },
+  "eslintIgnore": [
+    "www/*"
+  ],
   "prettier": {
     "arrowParens": "always",
     "bracketSameLine": false,
@@ -57,7 +65,8 @@
     "lint": "eslint --fix src",
     "serve": "cross-env NODE_ENV=production npm-run-all build start",
     "start": "node ./server.js",
-    "tidy": "prettier-eslint --write \"src/**/*.{js,jsx}\""
+    "tidy": "prettier-eslint --write \"src/**/*.{js,jsx}\"",
+    "watch": "tsc -p jsconfig.json -w"
   },
   "type": "module"
 }
