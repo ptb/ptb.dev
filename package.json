@@ -1,4 +1,12 @@
 {
+  "author": {
+    "email": "peter@ptb.dev",
+    "name": "Peter T Bosse II",
+    "url": "https://ptb.dev/"
+  },
+  "bugs": {
+    "url": "https://github.com/ptb/ptb.dev/issues"
+  },
   "dependencies": {
     "@ptb/style": "latest",
     "react": "17.0.2",
@@ -6,6 +14,7 @@
   },
   "devDependencies": {
     "@types/compression": "latest",
+    "@types/cssbeautify": "latest",
     "@types/express": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
@@ -15,6 +24,7 @@
     "@vitejs/plugin-react": "1.3.0",
     "compression": "1.7.4",
     "cross-env": "7.0.3",
+    "cssbeautify": "0.3.1",
     "eslint": "7.32.0",
     "eslint-plugin-compat": "latest",
     "eslint-plugin-fp": "latest",
@@ -28,8 +38,11 @@
     "eslint-plugin-standard": "latest",
     "express": "4.17.3",
     "npm-run-all": "4.1.5",
+    "postcss": "8.4.12",
     "prettier-eslint": "latest",
     "prettier-eslint-cli": "latest",
+    "react-runner": "1.0.1",
+    "sucrase": "3.20.3",
     "typescript": "latest",
     "vite": "2.9.1",
     "vite-plugin-babel-macros": "1.0.6",
@@ -38,6 +51,15 @@
   "eslintIgnore": [
     "www/*"
   ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "email": "peter@ptb.dev",
+      "name": "Peter T Bosse II",
+      "url": "https://ptb.dev/"
+    }
+  ],
+  "name": "@ptb/ptb.dev",
   "prettier": {
     "arrowParens": "always",
     "bracketSameLine": false,
@@ -56,6 +78,14 @@
     "tabWidth": 2,
     "trailingComma": "none",
     "useTabs": false
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ptb/ptb.dev"
+  },
+  "resolutions": {
+    "esbuild": "0.14.3"
   },
   "scripts": {
     "build": "npm-run-all build:csr build:ssr build:ssg",

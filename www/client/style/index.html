@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta charset="utf-8"/><title>@ptb/style</title><meta content="CSS compiler with a powerful, intuitive API that makes authoring CSS faster and easier." name="description"/><meta content="initial-scale=1,width=device-width" name="viewport"/><meta content="hsl(240,5%,15%)" media="(prefers-color-scheme:dark)" name="theme-color"/><meta content="hsl(240,5%,85%)" media="(prefers-color-scheme:light)" name="theme-color"/><link as="font" crossorigin href="/fonts/pt-serif-400.woff2" rel="preload" type="font/woff2"/><link as="font" crossorigin href="/fonts/pt-serif-700.woff2" rel="preload" type="font/woff2"/><link as="font" crossorigin href="/fonts/source-code-pro-400.woff2" rel="preload" type="font/woff2"/><link as="font" crossorigin href="/fonts/source-code-pro-700.woff2" rel="preload" type="font/woff2"/><link as="font" crossorigin href="/fonts/source-sans-pro-400.woff2" rel="preload" type="font/woff2"/><link as="font" crossorigin href="/fonts/source-sans-pro-700.woff2" rel="preload" type="font/woff2"/><link rel="stylesheet" type="text/css" href="/assets/src/pages/_default.page.client.jsx.7cca6456.css"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/src/pages/_default.page.client.jsx.4d2dd2cb.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/editor.5460ff78.js"><link rel="modulepreload" as="script" type="text/javascript" href="/assets/use-tabs.08607ae9.js"></head><body><div id="root"><div class="oreuk5"><input type="checkbox" class="duh7by" id="menu"/><header class="orz66k"><label aria-checked="false" aria-label="Menu" class="duvu4f or1jco" for="menu"><svg aria-hidden="true" class="or3jdb" focusable="false" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 120" width="32"><defs><path d="M30 60h60" id="a"></path></defs><g stroke="hsl(240,15%,80%)" stroke-width="6"><use class="mi6pjw or170y orjefm" xlink:href="#a"></use><use class="ore52m orjefm" xlink:href="#a"></use><use class="mixgal orjefm orxqsw" xlink:href="#a"></use></g></svg></label><h1 class="eouf4u or2ndg orxn9c">ptb/style</h1><a class="e3hlrd embtae kd9w0h or1ov5 ordqbv orewfl oru05l" href="./convert/">Convert</a><a class="e3hlrd embtae kdbcwx or1ov5 ordqbv orewfl oru05l" href="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%7B%0A++++++++%22%40media+%28prefersColorScheme%3A+dark%29%22%3A+%7B%0A++++++++++bg%3A+%22%239c9%22%2C%0A++++++++++color%3A+%22%23333%22%0A++++++++%7D%2C%0A++++++++%22%40media+%28prefersColorScheme%3A+light%29%22%3A+%7B%0A++++++++++bg%3A+%22%23363%22%2C%0A++++++++++color%3A+%22%23ccc%22%0A++++++++%7D%2C%0A++++++++p%3A+%224px+10px%22%2C%0A++++++++display%3A+%22block%22%2C%0A++++++++maxWidth%3A+200%2C%0A++++++++m%3A+%22auto%22%2C%0A++++++++textAlign%3A+%22center%22%2C%0A++++++++borderRadius%3A+10%2C%0A++++++++border%3A+%222px+solid+%23696%22%2C%0A++++++++fontWeight%3A+700%2C%0A++++++++fontFamily%3A+%22sans-serif%22%2C%0A++++++++fontSize%3A+%7B%0A++++++++++%22%40media+%28max-width%3A+767px%29%22%3A+20%2C%0A++++++++++%22%40media+%28min-width%3A+768px%29%22%3A+24%0A++++++++%7D%2C%0A++++++++animationName%3A+%7B%0A++++++++++%220%25%22%3A+%7B%0A++++++++++++transform%3A+%22scale3d%281%2C1%2C1%29%22%0A++++++++++%7D%2C%0A++++++++++%2210%25%2C20%25%22%3A+%7B%0A++++++++++++transform%3A%0A++++++++++++++%22scale3d%28.9%2C.9%2C.9%29+rotate3d%280%2C0%2C1%2C-3deg%29%22%0A++++++++++%7D%2C%0A++++++++++%2230%25%2C50%25%2C70%25%2C90%25%22%3A+%7B%0A++++++++++++transform%3A%0A++++++++++++++%22scale3d%281.1%2C1.1%2C1.1%29+rotate3d%280%2C0%2C1%2C3deg%29%22%0A++++++++++%7D%2C%0A++++++++++%2240%25%2C60%25%2C80%25%22%3A+%7B%0A++++++++++++transform%3A%0A++++++++++++++%22scale3d%281.1%2C1.1%2C1.1%29+rotate3d%280%2C0%2C1%2C-3deg%29%22%0A++++++++++%7D%2C%0A++++++++++to%3A+%7B%0A++++++++++++transform%3A+%22scale3d%281%2C1%2C1%29%22%0A++++++++++%7D%0A++++++++%7D%2C%0A++++++++animationDuration%3A+%221s%22%2C%0A++++++++animationIterationCount%3A+%22infinite%22%2C%0A++++++%7D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D">Demo</a><a class="e3hlrd embtae kd2vly or1ov5 ordqbv orewfl oru05l" href="https://github.com/ptb/style">GitHub</a></header><aside class="fbuqhn h9747f"><ul aria-label="toc" aria-orientation="vertical" class="du55pr or1v06 or7dra orb8h7" role="tablist"><li><h3 class="duashw ori88l">Basics</h3><ul class="du55pr or1v06 or7dra orb8h7"><li role="none"><label aria-controls="introduction-panel" aria-selected="true" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="introduction-input" id="introduction-tab" role="tab" tabindex="0"><div class="orauug orf0o0 kdkmy8">Introduction</div></label></li><li role="none"><label aria-controls="styles-are-js-objects-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="styles-are-js-objects-input" id="styles-are-js-objects-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdd1qq">Styles Are JS Objects</div></label></li><li role="none"><label aria-controls="deep-merge-objects-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="deep-merge-objects-input" id="deep-merge-objects-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kde01s">Deep Merge Objects</div></label></li><li role="none"><label aria-controls="atomic-classes-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="atomic-classes-input" id="atomic-classes-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdavy2">Atomic Classes</div></label></li><li role="none"><label aria-controls="grouped-classes-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="grouped-classes-input" id="grouped-classes-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kd61ka">Grouped Classes</div></label></li></ul></li><li><h3 class="duashw ori88l">Shorthand Keys</h3><ul class="du55pr or1v06 or7dra orb8h7"><li role="none"><label aria-controls="stored-variables-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="stored-variables-input" id="stored-variables-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kd6g9l">Stored Variables</div></label></li><li role="none"><label aria-controls="css-properties-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="css-properties-input" id="css-properties-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdscmx">CSS Properties</div></label></li><li role="none"><label aria-controls="media-queries-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="media-queries-input" id="media-queries-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdn5jr">Media Queries</div></label></li><li role="none"><label aria-controls="font-face-rules-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="font-face-rules-input" id="font-face-rules-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdoz44">Font Face Rules</div></label></li><li role="none"><label aria-controls="keyframes-rules-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="keyframes-rules-input" id="keyframes-rules-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdakmv">Keyframes Rules</div></label></li><li role="none"><label aria-controls="vendor-prefixes-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="vendor-prefixes-input" id="vendor-prefixes-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdbkmf">Vendor Prefixes</div></label></li></ul></li><li><h3 class="duashw ori88l">Selectors</h3><ul class="du55pr or1v06 or7dra orb8h7"><li role="none"><label aria-controls="complex-selectors-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="complex-selectors-input" id="complex-selectors-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdl98y">Complex Selectors</div></label></li><li role="none"><label aria-controls="nesting-selector-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="nesting-selector-input" id="nesting-selector-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdcigh">Nesting Selector</div></label></li><li role="none"><label aria-controls="placeholder-classes-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="placeholder-classes-input" id="placeholder-classes-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kd5iit">Placeholder Classes</div></label></li></ul></li><li><h3 class="duashw ori88l">Values &amp; Variables</h3><ul class="du55pr or1v06 or7dra orb8h7"><li role="none"><label aria-controls="smart-integers-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="smart-integers-input" id="smart-integers-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdh6y9">Smart Integers</div></label></li><li role="none"><label aria-controls="fallback-array-values-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="fallback-array-values-input" id="fallback-array-values-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdxv8u">Fallback Array Values</div></label></li></ul></li><li><h3 class="duashw ori88l">Production Ready</h3><ul class="du55pr or1v06 or7dra orb8h7"><li role="none"><label aria-controls="zero-runtime-option-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="zero-runtime-option-input" id="zero-runtime-option-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kd1ohh">Zero–Runtime Option</div></label></li><li role="none"><label aria-controls="-with-create-react-app-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="-with-create-react-app-input" id="-with-create-react-app-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kd24jo">…with Create React App</div></label></li><li role="none"><label aria-controls="-with-gatsby-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="-with-gatsby-input" id="-with-gatsby-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdyhbr">…with Gatsby</div></label></li><li role="none"><label aria-controls="-with-next-js-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="-with-next-js-input" id="-with-next-js-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdre8k">…with Next.js</div></label></li><li role="none"><label aria-controls="-with-tailwind-css-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="-with-tailwind-css-input" id="-with-tailwind-css-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kd3siy">…with Tailwind CSS</div></label></li><li role="none"><label aria-controls="-with-vite-panel" aria-selected="false" class="or5d1l or6cxf or77o3 or7qxx ori2ie orwbnb" for="-with-vite-input" id="-with-vite-tab" role="tab" tabindex="-1"><div class="orauug orf0o0 kdb8lg">…with Vite</div></label></li></ul></li></ul></aside><label aria-label="Close menu" class="duvu4f orgon0 orgz8o orjefw" for="menu"></label><footer class="kd4rv4 or661w"><div>Made With <abbr title="Love">❤️</abbr> in<!-- --> <abbr title="New Hampshire">NH</abbr></div></footer><main class="or0702 ort98m orwsln orz8ms"><input type="radio" class="duh7by" id="introduction-input" name="toc" checked=""/><section aria-hidden="false" aria-labelledby="introduction-tab" class="ornwae orx5mt" id="introduction-panel" role="tabpanel" tabindex="0"></section><input type="radio" class="duh7by" id="styles-are-js-objects-input" name="toc"/><section aria-hidden="true" aria-labelledby="styles-are-js-objects-tab" class="ornwae orx5mt" id="styles-are-js-objects-panel" role="tabpanel" tabindex="-1"><h2>Styles are JavaScript Objects</h2><h3>Can be defined inline…</h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-jsx line-numbers or7sv8" data-line="5-8"><code class="batbmf language-jsx or3gr9">import { css } from &quot;@ptb/style&quot;
+
+export default () =&gt; (
+  &lt;span
+    className={css({
+      fontFamily: &quot;sans-serif&quot;,
+      fontSize: &quot;24px&quot;
+    })}
+  &gt;
+    Buy Now!
+  &lt;/span&gt;
+)</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="1" spellcheck="false">import { css } from &quot;@ptb/style&quot;
+
+export default () =&gt; (
+  &lt;span
+    className={css({
+      fontFamily: &quot;sans-serif&quot;,
+      fontSize: &quot;24px&quot;
+    })}
+  &gt;
+    Buy Now!
+  &lt;/span&gt;
+)</textarea></div><h3>in variables…</h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-jsx line-numbers or7sv8" data-line="4-7,10"><code class="batbmf language-jsx or3gr9">import { css } from &quot;@ptb/style&quot;
+
+export default () =&gt; {
+  const styles = {
+    fontFamily: &quot;sans-serif&quot;,
+    fontSize: &quot;24px&quot;
+  }
+
+  return (
+    &lt;span className={css(styles)}&gt;
+      Buy Now!
+    &lt;/span&gt;
+  )
+}</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="3" spellcheck="false">import { css } from &quot;@ptb/style&quot;
+
+export default () =&gt; {
+  const styles = {
+    fontFamily: &quot;sans-serif&quot;,
+    fontSize: &quot;24px&quot;
+  }
+
+  return (
+    &lt;span className={css(styles)}&gt;
+      Buy Now!
+    &lt;/span&gt;
+  )
+}</textarea></div><h3>by importing from other files…</h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-js line-numbers or7sv8" data-line="4-7"><code class="batbmf language-js or3gr9">import { css } from &quot;@ptb/style&quot;
+
+export default {
+  button: css({
+    fontFamily: &quot;sans-serif&quot;,
+    fontSize: &quot;24px&quot;
+  })
+}</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="3" spellcheck="false">import { css } from &quot;@ptb/style&quot;
+
+export default {
+  button: css({
+    fontFamily: &quot;sans-serif&quot;,
+    fontSize: &quot;24px&quot;
+  })
+}</textarea></div><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-jsx line-numbers or7sv8" data-line="1,4"><code class="batbmf language-jsx or3gr9">import classNames from &quot;./styles.js&quot;
+
+export default () =&gt; (
+  &lt;span className={classNames.button}&gt;
+    Buy Now!
+  &lt;/span&gt;
+)</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="3" spellcheck="false">import classNames from &quot;./styles.js&quot;
+
+export default () =&gt; (
+  &lt;span className={classNames.button}&gt;
+    Buy Now!
+  &lt;/span&gt;
+)</textarea></div><h3>…or passed as props.</h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-jsx line-numbers or7sv8" data-line="3,4"><code class="batbmf language-jsx or3gr9">import { css } from &quot;@ptb/style&quot;
+
+export default ({ styles }) =&gt; (
+  &lt;span className={css(styles)}&gt;
+    Buy Now!
+  &lt;/span&gt;
+)</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="3" spellcheck="false">import { css } from &quot;@ptb/style&quot;
+
+export default ({ styles }) =&gt; (
+  &lt;span className={css(styles)}&gt;
+    Buy Now!
+  &lt;/span&gt;
+)</textarea></div><h3>…or an array of JavaScript Objects</h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-jsx line-numbers or7sv8" data-line="5-13"><code class="batbmf language-jsx or3gr9">import { css } from &quot;@ptb/style&quot;
+
+export default () =&gt; (
+  &lt;span
+    className={css([
+      {
+        fontFamily: &quot;sans-serif&quot;,
+        fontSize: &quot;24px&quot;
+      },
+      {
+        fontSize: &quot;36px&quot;
+      }
+    ])}
+  &gt;
+    Buy Now!
+  &lt;/span&gt;
+)</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="3" spellcheck="false">import { css } from &quot;@ptb/style&quot;
+
+export default () =&gt; (
+  &lt;span
+    className={css([
+      {
+        fontFamily: &quot;sans-serif&quot;,
+        fontSize: &quot;24px&quot;
+      },
+      {
+        fontSize: &quot;36px&quot;
+      }
+    ])}
+  &gt;
+    Buy Now!
+  &lt;/span&gt;
+)</textarea></div></section><input type="radio" class="duh7by" id="deep-merge-objects-input" name="toc"/><section aria-hidden="true" aria-labelledby="deep-merge-objects-tab" class="ornwae orx5mt" id="deep-merge-objects-panel" role="tabpanel" tabindex="-1"><h2>Deep Merge Objects</h2><p>If you pass an array of objects as the first argument to the<!-- --> <code class="c8z8xf kcs4l4">css</code> function, the objects will be expanded (as in the case of<!-- --> <code class="c8z8xf kcs4l4">bg</code>) then deep merged. Only the “surviving” property/value pairs are used.</p><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%5B%0A++++++++%7B%0A++++++++++bg%3A+%22%239c9%22%2C%0A++++++++++color%3A+%22%23333%22%2C%0A++++++++++p%3A+%224px+10px%22%2C%0A++++++++++display%3A+%22block%22%2C%0A++++++++++maxWidth%3A+200%2C%0A++++++++++m%3A+%22auto%22%2C%0A++++++++++textAlign%3A+%22center%22%2C%0A++++++++++borderRadius%3A+10%2C%0A++++++++++border%3A+%222px+solid+%23696%22%2C%0A++++++++++fontWeight%3A+700%2C%0A++++++++++fontFamily%3A+%22sans-serif%22%2C%0A++++++++++fontSize%3A+24%2C%0A++++++++%7D%2C%0A++++++++%7B%0A++++++++++backgroundColor%3A+%22%23cfc%22%2C%0A++++++++++maxWidth%3A+275%2C%0A++++++++++overflow%3A+%22hidden%22%2C%0A++++++++++whiteSpace%3A+%22nowrap%22%2C%0A++++++++++textOverflow%3A+%22ellipsis%22%2C%0A++++++++%7D%0A++++++%5D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D&amp;e=6%2C9%2C19-20&amp;s=25-27%2C45-47&amp;i=17%2C68#t=3" style="height:80vh"></iframe></section><input type="radio" class="duh7by" id="atomic-classes-input" name="toc"/><section aria-hidden="true" aria-labelledby="atomic-classes-tab" class="ornwae orx5mt" id="atomic-classes-panel" role="tabpanel" tabindex="-1"><h2>Atomic Classes</h2><p>Each property/value pair creates an atomic class name by default. You’ll notice that regardless of the order that the rules are listed, they always result in the same order in the stylesheet. That means that all of the<!-- --> <code class="c8z8xf kcs4l4">textAlign</code> properties will always be together, which makes it possible to audit the styles by just reading.<!-- --> <em>This is a live editor, try changing some of the values for<!-- --> <code class="c8z8xf kcs4l4">maxWidth</code> or<!-- --> <code class="c8z8xf kcs4l4">fontSize</code> here and see what the effect is immediately.</em> <!-- -->Switch to the HTML tab and notice that the class name for that property is recalculated based on the value, but the two letter prefix that is based on the property does not change.</p><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%7B%0A++++++++backgroundColor%3A+%22%239c9%22%2C%0A++++++++color%3A+%22%23333%22%2C%0A++++++++padding%3A+%224px+10px%22%2C%0A++++++++display%3A+%22block%22%2C%0A++++++++maxWidth%3A+%22200px%22%2C%0A++++++++margin%3A+%22auto%22%2C%0A++++++++textAlign%3A+%22center%22%2C%0A++++++++borderRadius%3A+%2210px%22%2C%0A++++++++border%3A+%222px+solid+%23696%22%2C%0A++++++++fontWeight%3A+%22bold%22%2C%0A++++++++fontFamily%3A+%22sans-serif%22%2C%0A++++++++fontSize%3A+%2224px%22%2C%0A++++++%7D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D#t=2" style="height:80vh"></iframe></section><input type="radio" class="duh7by" id="grouped-classes-input" name="toc"/><section aria-hidden="true" aria-labelledby="grouped-classes-tab" class="ornwae orx5mt" id="grouped-classes-panel" role="tabpanel" tabindex="-1"><h2>Grouped Classes</h2><p>But if you prefer to have fewer class names attached to elements, that is an option, too. Just wrap the styles in an object with as the key. Depending on your needs, you could choose to group styles together under a single class name or individual classes depending on what your needs are. If you’re planning on re-using a group of styles throughout your project, you’ll want to group them with<!-- --> <code class="c8z8xf kcs4l4">&amp;</code>. It results in a slightly larger stylesheet, but fewer class names in the HTML.</p><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%7B%0A++++++++%22%26%22%3A+%7B%0A++++++++++backgroundColor%3A+%22%239c9%22%2C%0A++++++++++color%3A+%22%23333%22%2C%0A++++++++++padding%3A+%224px+10px%22%2C%0A++++++++++display%3A+%22block%22%2C%0A++++++++++maxWidth%3A+%22200px%22%2C%0A++++++++++margin%3A+%22auto%22%2C%0A++++++++++textAlign%3A+%22center%22%2C%0A++++++++++borderRadius%3A+%2210px%22%2C%0A++++++++++border%3A+%222px+solid+%23696%22%2C%0A++++++++++fontWeight%3A+%22bold%22%2C%0A++++++++++fontFamily%3A+%22sans-serif%22%2C%0A++++++++++fontSize%3A+%2224px%22%2C%0A++++++++%7D%0A++++++%7D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D#t=2" style="height:80vh"></iframe></section><input type="radio" class="duh7by" id="stored-variables-input" name="toc"/><section aria-hidden="true" aria-labelledby="stored-variables-tab" class="ornwae orx5mt" id="stored-variables-panel" role="tabpanel" tabindex="-1"><h2>Stored Variables Using<!-- --> <code class="c8z8xf kcs4l4">$</code> Prefix</h2><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%7B%0A++++++++%24colors%3A+%7B%0A++++++++++borders%3A+%7B%0A++++++++++++heavy%3A+%22%23030%22%0A++++++++++%7D%2C%0A++++++++++buttons%3A+%22%23363%22%2C%0A++++++++++text%3A+%7B%0A++++++++++++primary%3A+%22%23cfc%22%0A++++++++++%7D%0A++++++++%7D%2C%0A+++++++%24mainFont%3A+%5B%0A+++++++++%22Georgia%22%2C%0A+++++++++%22Times+New+Roman%22%2C%0A+++++++++%22serif%22%0A++++++++%5D%2C%0A++++++++%24width%3A+%222px%22%2C%0A++++++++bg%3A+%22%24colors.buttons%22%2C%0A++++++++color%3A+%22%24colors.text.primary%22%2C%0A++++++++p%3A+%224px+10px%22%2C%0A++++++++display%3A+%22block%22%2C%0A++++++++maxWidth%3A+200%2C%0A++++++++m%3A+%22auto%22%2C%0A++++++++textAlign%3A+%22center%22%2C%0A++++++++borderRadius%3A+10%2C%0A++++++++border%3A+%22%24width+solid+%24colors.borders.heavy%22%2C%0A++++++++fontWeight%3A+700%2C%0A++++++++fontFamily%3A+%22%24mainFont%22%2C%0A++++++++fontSize%3A+24%2C%0A++++++%7D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D#t=2&amp;e=5-21%2C28%2C30&amp;s=14%2C34%2C38%2C42&amp;i=2-28#t=3"></iframe></section><input type="radio" class="duh7by" id="css-properties-input" name="toc"/><section aria-hidden="true" aria-labelledby="css-properties-tab" class="ornwae orx5mt" id="css-properties-panel" role="tabpanel" tabindex="-1"><h2>Shorthand Properties</h2><p>Supports<!-- --> <a class="oripas" href="https://styled-system.com/api/">Styled System</a> <!-- -->shorthand properties.</p><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%7B%0A++++++++bg%3A+%22%239c9%22%2C%0A++++++++color%3A+%22%23333%22%2C%0A++++++++p%3A+%224px+10px%22%2C%0A++++++++display%3A+%22block%22%2C%0A++++++++maxWidth%3A+%22200px%22%2C%0A++++++++m%3A+%22auto%22%2C%0A++++++++textAlign%3A+%22center%22%2C%0A++++++++borderRadius%3A+%2210px%22%2C%0A++++++++border%3A+%222px+solid+%23696%22%2C%0A++++++++fontWeight%3A+%22bold%22%2C%0A++++++++fontFamily%3A+%22sans-serif%22%2C%0A++++++++fontSize%3A+%2224px%22%2C%0A++++++%7D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D&amp;e=5-6%2C9&amp;s=25-27%2C29-31%2C33-35&amp;i=2-35%2C70-86#t=3" style="height:calc(var(--viewport-height) * .35)"></iframe><div class="du41xv ek1q4r g71q4r h4t9bs"><div><h3>CSS Properties</h3><pre class="or1cqo  or7sv8 language-js" data-src="./get-property-id.json" style="display:block;user-select:auto;height:calc(var(--viewport-height) * .35)"></pre></div><div><h3>Shorthand<!-- --> <code class="c8z8xf kcs4l4">$properties</code></h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-js line-numbers or7sv8" style="height:calc(var(--viewport-height) * .35)"><code class="batbmf language-js or3gr9">{
+  &quot;bg&quot;: &quot;backgroundColor&quot;,
+  &quot;borderX&quot;: [
+    &quot;borderLeft&quot;,
+    &quot;borderRight&quot;
+  ],
+  &quot;borderY&quot;: [
+    &quot;borderBottom&quot;,
+    &quot;borderTop&quot;
+  ],
+  &quot;m&quot;: &quot;margin&quot;,
+  &quot;mb&quot;: &quot;marginBottom&quot;,
+  &quot;ml&quot;: &quot;marginLeft&quot;,
+  &quot;mr&quot;: &quot;marginRight&quot;,
+  &quot;mt&quot;: &quot;marginTop&quot;,
+  &quot;mx&quot;: [
+    &quot;marginLeft&quot;,
+    &quot;marginRight&quot;
+  ],
+  &quot;my&quot;: [
+    &quot;marginBottom&quot;,
+    &quot;marginTop&quot;
+  ],
+  &quot;p&quot;: &quot;padding&quot;,
+  &quot;pb&quot;: &quot;paddingBottom&quot;,
+  &quot;pl&quot;: &quot;paddingLeft&quot;,
+  &quot;pr&quot;: &quot;paddingRight&quot;,
+  &quot;pt&quot;: &quot;paddingTop&quot;,
+  &quot;px&quot;: [
+    &quot;paddingLeft&quot;,
+    &quot;paddingRight&quot;
+  ],
+  &quot;py&quot;: [
+    &quot;paddingBottom&quot;,
+    &quot;paddingTop&quot;
+  ],
+  &quot;size&quot;: [
+    &quot;height&quot;,
+    &quot;width&quot;
+  ]
+}</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="3" spellcheck="false" style="height:calc(var(--viewport-height) * .35)">{
+  &quot;bg&quot;: &quot;backgroundColor&quot;,
+  &quot;borderX&quot;: [
+    &quot;borderLeft&quot;,
+    &quot;borderRight&quot;
+  ],
+  &quot;borderY&quot;: [
+    &quot;borderBottom&quot;,
+    &quot;borderTop&quot;
+  ],
+  &quot;m&quot;: &quot;margin&quot;,
+  &quot;mb&quot;: &quot;marginBottom&quot;,
+  &quot;ml&quot;: &quot;marginLeft&quot;,
+  &quot;mr&quot;: &quot;marginRight&quot;,
+  &quot;mt&quot;: &quot;marginTop&quot;,
+  &quot;mx&quot;: [
+    &quot;marginLeft&quot;,
+    &quot;marginRight&quot;
+  ],
+  &quot;my&quot;: [
+    &quot;marginBottom&quot;,
+    &quot;marginTop&quot;
+  ],
+  &quot;p&quot;: &quot;padding&quot;,
+  &quot;pb&quot;: &quot;paddingBottom&quot;,
+  &quot;pl&quot;: &quot;paddingLeft&quot;,
+  &quot;pr&quot;: &quot;paddingRight&quot;,
+  &quot;pt&quot;: &quot;paddingTop&quot;,
+  &quot;px&quot;: [
+    &quot;paddingLeft&quot;,
+    &quot;paddingRight&quot;
+  ],
+  &quot;py&quot;: [
+    &quot;paddingBottom&quot;,
+    &quot;paddingTop&quot;
+  ],
+  &quot;size&quot;: [
+    &quot;height&quot;,
+    &quot;width&quot;
+  ]
+}</textarea></div></div></div></section><input type="radio" class="duh7by" id="media-queries-input" name="toc"/><section aria-hidden="true" aria-labelledby="media-queries-tab" class="ornwae orx5mt" id="media-queries-panel" role="tabpanel" tabindex="-1"><h2>Media Queries</h2><p>Media queries can be nested or inverted. This is seriously powerful feature. If you’re creating a design to switch between light mode and dark mode, you can keep the values for each at the “bottom” of the style object under the CSS property it affects. This provides the flexibility to create a media query at any point without enforcing a specific structure.</p><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%7B%0A++++++++%22%40media+%28min-width%3A+768px%29%22%3A+%7B%0A++++++++++%22%40media+%28-webkit-min-device-pixel-ratio%3A+2%29%22%3A+%7B%0A++++++++++++backgroundImage%3A+%22url%28%5C%22data%3Aimage%2Fsvg%2Bxml%2C%253csvg+xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27+width%3D%27120%27+height%3D%27120%27%253e%253cpath+d%3D%27M16+111h88c0-32-32-15-32-31C112+8+8+8+48+80c0+16-32-1-32+31Z%27+fill%3D%27none%27+stroke%3D%27black%27+stroke-width%3D%272%27%2F%253e%253c%2Fsvg%253e%5C%22%29%22%2C%0A++++++++++++backgroundPosition%3A+%7B%0A++++++++++++++%22%40media+%28orientation%3Alandscape%29%22%3A+%2210px+0%22%0A++++++++++++%7D%2C%0A++++++++++++backgroundRepeat%3A+%22no-repeat%22%2C%0A++++++++++++backgroundSize%3A+30%0A++++++++++%7D%0A++++++++%7D%2C%0A++++++++%22%40media+%28prefersColorScheme%3Adark%29%22%3A+%7B%0A++++++++++bg%3A+%7B%0A++++++++++++%22%40media+%28maxWidth%3A767.98px%29%22%3A+%22%23363%22%2C%0A++++++++++++%22%40media+%28minWidth%3A768px%29%22%3A+%22%23633%22%0A++++++++++%7D%2C%0A++++++++++borderColor%3A+%22%23030%22%2C%0A++++++++++color%3A+%22%23eee%22%0A++++++++%7D%2C%0A++++++++p%3A+%224px+10px%22%2C%0A++++++++display%3A+%22block%22%2C%0A++++++++maxWidth%3A+200%2C%0A++++++++m%3A+%22auto%22%2C%0A++++++++textAlign%3A+%22center%22%2C%0A++++++++borderRadius%3A+10%2C%0A++++++++border%3A+%222px+solid+%23696%22%2C%0A++++++++fontWeight%3A+700%2C%0A++++++++fontFamily%3A+%22sans-serif%22%2C%0A++++++++fontSize%3A+24%2C%0A++++++%7D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D#t=3&amp;e=5%2C6%2C9%2C15%2C17-18&amp;s=41%2C47%2C61%2C67%2C73&amp;i=179-182%2C201-204%2C223-226%2C245-248%2C268-271%2C290-293%2C312-314%2C333-335#t=3" style="height:calc(var(--viewport-height) * .25)"></iframe><div style="display:grid;gap:8px;grid-template-columns:1fr 1fr;padding:8px"><div><h3><code class="c8z8xf kcs4l4">$media</code></h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-js line-numbers or7sv8"><code class="batbmf language-js or3gr9">{
+  &quot;_&quot;: &quot;&quot;,
+  &quot;Dk&quot;: &quot;(prefersColorScheme:dark)&quot;,
+  &quot;L&quot;: &quot;(orientation:landscape)&quot;,
+  &quot;Lt&quot;: &quot;(prefersColorScheme:light)&quot;,
+  &quot;Md&quot;: &quot;(minWidth:768px)&quot;,
+  &quot;P&quot;: &quot;(orientation:portrait)&quot;,
+  &quot;Pr&quot;: &quot;print&quot;,
+  &quot;Prm&quot;: &quot;(prefersReducedMotion:reduce)&quot;,
+  &quot;Prt&quot;: &quot;(prefersReducedTransparency:reduce)&quot;,
+  &quot;R&quot;: &quot;(WebkitMinDevicePixelRatio:2),(minResolution:192dpi)&quot;,
+  &quot;Sc&quot;: &quot;screen&quot;,
+  &quot;Sm&quot;: &quot;(maxWidth:767.98px)&quot;
+}</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="2" spellcheck="false">{
+  &quot;_&quot;: &quot;&quot;,
+  &quot;Dk&quot;: &quot;(prefersColorScheme:dark)&quot;,
+  &quot;L&quot;: &quot;(orientation:landscape)&quot;,
+  &quot;Lt&quot;: &quot;(prefersColorScheme:light)&quot;,
+  &quot;Md&quot;: &quot;(minWidth:768px)&quot;,
+  &quot;P&quot;: &quot;(orientation:portrait)&quot;,
+  &quot;Pr&quot;: &quot;print&quot;,
+  &quot;Prm&quot;: &quot;(prefersReducedMotion:reduce)&quot;,
+  &quot;Prt&quot;: &quot;(prefersReducedTransparency:reduce)&quot;,
+  &quot;R&quot;: &quot;(WebkitMinDevicePixelRatio:2),(minResolution:192dpi)&quot;,
+  &quot;Sc&quot;: &quot;screen&quot;,
+  &quot;Sm&quot;: &quot;(maxWidth:767.98px)&quot;
+}</textarea></div></div><div><h3><code class="c8z8xf kcs4l4">$supports</code></h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-js line-numbers or7sv8"><code class="batbmf language-js or3gr9">{}</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="2" spellcheck="false">{}</textarea></div></div></div></section><input type="radio" class="duh7by" id="font-face-rules-input" name="toc"/><section aria-hidden="true" aria-labelledby="font-face-rules-tab" class="ornwae orx5mt" id="font-face-rules-panel" role="tabpanel" tabindex="-1"><h2><code class="c8z8xf kcs4l4">@font-face</code> Rules</h2><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cdiv%3E%0A++++++%3Cdiv%0A++++++++className%3D%7Bcss%28%7B%0A++++++++++fontFamily%3A+%5B%0A++++++++++++%7B%0A++++++++++++++fontFamily%3A+%22Source+Sans+Pro%22%2C%0A++++++++++++++fontStyle%3A+%22normal%22%2C%0A++++++++++++++fontWeight%3A+400%2C%0A++++++++++++++src%3A+%22url%28%27%2Ffonts%2Fsource-sans-pro-400.woff2%27%29+format%28%27woff2%27%29%22%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A++++++++++++++fontFamily%3A+%22Source+Sans+Pro%22%2C%0A++++++++++++++fontStyle%3A+%22oblique%22%2C%0A++++++++++++++fontWeight%3A+400%2C%0A++++++++++++++src%3A+%22url%28%27%2Ffonts%2Fsource-sans-pro-400i.woff2%27%29+format%28%27woff2%27%29%22%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A++++++++++++++fontFamily%3A+%22Source+Sans+Pro%22%2C%0A++++++++++++++fontStyle%3A+%22normal%22%2C%0A++++++++++++++fontWeight%3A+700%2C%0A++++++++++++++src%3A+%22url%28%27%2Ffonts%2Fsource-sans-pro-700.woff2%27%29+format%28%27woff2%27%29%22%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A++++++++++++++fontFamily%3A+%22Source+Sans+Pro%22%2C%0A++++++++++++++fontStyle%3A+%22oblique%22%2C%0A++++++++++++++fontWeight%3A+700%2C%0A++++++++++++++src%3A+%22url%28%27%2Ffonts%2Fsource-sans-pro-700i.woff2%27%29+format%28%27woff2%27%29%22%0A++++++++++++%7D%0A++++++++++%5D%2C%0A++++++++++fontSize%3A+24%2C%0A++++++++++fontWeight%3A+700%0A++++++++%7D%29%7D%0A++++++%3E%0A++++++++Buy+Now%21%0A++++++%3C%2Fdiv%3E%0A++++++%3Cdiv%0A++++++++className%3D%7Bcss%28%7B%0A++++++++++fontFamily%3A+%5B%0A++++++++++++%7B%0A++++++++++++++fontFamily%3A+%22PT+Serif%22%2C%0A++++++++++++++fontStyle%3A+%22normal%22%2C%0A++++++++++++++fontWeight%3A+400%2C%0A++++++++++++++src%3A+%22url%28%27%2Ffonts%2Fpt-serif-400.woff2%27%29+format%28%27woff2%27%29%22%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A++++++++++++++fontFamily%3A+%22PT+Serif%22%2C%0A++++++++++++++fontStyle%3A+%22italic%22%2C%0A++++++++++++++fontWeight%3A+400%2C%0A++++++++++++++src%3A+%22url%28%27%2Ffonts%2Fpt-serif-400i.woff2%27%29+format%28%27woff2%27%29%22%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A++++++++++++++fontFamily%3A+%22PT+Serif%22%2C%0A++++++++++++++fontStyle%3A+%22normal%22%2C%0A++++++++++++++fontWeight%3A+700%2C%0A++++++++++++++src%3A+%22url%28%27%2Ffonts%2Fpt-serif-700.woff2%27%29+format%28%27woff2%27%29%22%0A++++++++++++%7D%2C%0A++++++++++++%7B%0A++++++++++++++fontFamily%3A+%22PT+Serif%22%2C%0A++++++++++++++fontStyle%3A+%22italic%22%2C%0A++++++++++++++fontWeight%3A+700%2C%0A++++++++++++++src%3A+%22url%28%27%2Ffonts%2Fpt-serif-700i.woff2%27%29+format%28%27woff2%27%29%22%0A++++++++++++%7D%0A++++++++++%5D%2C%0A++++++++++fontSize%3A+24%2C%0A++++++++++fontWeight%3A+700%0A++++++++%7D%29%7D%0A++++++%3E%0A++++++++Buy+Again%21%0A++++++%3C%2Fdiv%3E%0A++++%3C%2Fdiv%3E%0A++%29%0A%7D#t=3#t=3"></iframe></section><input type="radio" class="duh7by" id="keyframes-rules-input" name="toc"/><section aria-hidden="true" aria-labelledby="keyframes-rules-tab" class="ornwae orx5mt" id="keyframes-rules-panel" role="tabpanel" tabindex="-1"><h2><code class="c8z8xf kcs4l4">@keyframes</code> Rules</h2><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%7B%0A++++++++animationName%3A+%7B%0A++++++++++%220%25%22%3A+%7B%0A++++++++++++transform%3A+%22scale3d%281%2C1%2C1%29%22%0A++++++++++%7D%2C%0A++++++++++%2210%25%2C20%25%22%3A+%7B%0A++++++++++++transform%3A%0A++++++++++++++%22scale3d%28.9%2C.9%2C.9%29+rotate3d%280%2C0%2C1%2C-3deg%29%22%0A++++++++++%7D%2C%0A++++++++++%2230%25%2C50%25%2C70%25%2C90%25%22%3A+%7B%0A++++++++++++transform%3A%0A++++++++++++++%22scale3d%281.1%2C1.1%2C1.1%29+rotate3d%280%2C0%2C1%2C3deg%29%22%0A++++++++++%7D%2C%0A++++++++++%2240%25%2C60%25%2C80%25%22%3A+%7B%0A++++++++++++transform%3A%0A++++++++++++++%22scale3d%281.1%2C1.1%2C1.1%29+rotate3d%280%2C0%2C1%2C-3deg%29%22%0A++++++++++%7D%2C%0A++++++++++to%3A+%7B%0A++++++++++++%22transform%22%3A+%22scale3d%281%2C1%2C1%29%22%0A++++++++++%7D%0A++++++++%7D%2C%0A++++++++animationDuration%3A+%221s%22%2C%0A++++++++animationIterationCount%3A+%22infinite%22%2C%0A++++++++bg%3A+%22%239c9%22%2C%0A++++++++color%3A+%22%23333%22%2C%0A++++++++p%3A+%224px+10px%22%2C%0A++++++++display%3A+%22block%22%2C%0A++++++++maxWidth%3A+200%2C%0A++++++++m%3A+%22auto%22%2C%0A++++++++textAlign%3A+%22center%22%2C%0A++++++++borderRadius%3A+10%2C%0A++++++++border%3A+%222px+solid+%23696%22%2C%0A++++++++fontWeight%3A+700%2C%0A++++++++fontFamily%3A+%22sans-serif%22%2C%0A++++++++fontSize%3A+24%2C%0A++++++%7D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D&amp;e=5-24&amp;s=45-47%2C57-77&amp;i=2-58#t=1"></iframe></section><input type="radio" class="duh7by" id="vendor-prefixes-input" name="toc"/><section aria-hidden="true" aria-labelledby="vendor-prefixes-tab" class="ornwae orx5mt" id="vendor-prefixes-panel" role="tabpanel" tabindex="-1"> <h2>Stored Variables Using<!-- --> <code class="c8z8xf kcs4l4">$</code> Prefix</h2><h3><code class="c8z8xf kcs4l4">$prefixes</code></h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-js line-numbers or7sv8"><code class="batbmf language-js or3gr9">{
+  &quot;appearance&quot;: [
+    &quot;Webkit-&quot;,
+    &quot;Moz-&quot;
+  ],
+  &quot;hyphens&quot;: [
+    &quot;Webkit-&quot;,
+    &quot;Ms-&quot;
+  ],
+  &quot;tabSize&quot;: [
+    &quot;Moz-&quot;,
+    &quot;O-&quot;
+  ],
+  &quot;userSelect&quot;: [
+    &quot;Webkit-&quot;,
+    &quot;Moz-&quot;,
+    &quot;Ms-&quot;
+  ]
+}</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="2" spellcheck="false">{
+  &quot;appearance&quot;: [
+    &quot;Webkit-&quot;,
+    &quot;Moz-&quot;
+  ],
+  &quot;hyphens&quot;: [
+    &quot;Webkit-&quot;,
+    &quot;Ms-&quot;
+  ],
+  &quot;tabSize&quot;: [
+    &quot;Moz-&quot;,
+    &quot;O-&quot;
+  ],
+  &quot;userSelect&quot;: [
+    &quot;Webkit-&quot;,
+    &quot;Moz-&quot;,
+    &quot;Ms-&quot;
+  ]
+}</textarea></div></section><input type="radio" class="duh7by" id="complex-selectors-input" name="toc"/><section aria-hidden="true" aria-labelledby="complex-selectors-tab" class="ornwae orx5mt" id="complex-selectors-panel" role="tabpanel" tabindex="-1"><h2>Complex Selectors</h2><p>All selectors are supported. Just be cautioned. This could be considered a bad practice. Just because you can doesn’t mean you should. You’ll notice that when global selectors are used, class names for those styles are not emitted to the element just added to the stylesheet.</p><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%7B%0A++++++++%22%5Baria-selected%3Dtrue%5D%22%3A+%7B%0A++++++++++fontWeight%3A+700%0A++++++++%7D%2C%0A++++++++%22%3Ahover%2C+ul+%3E+%3Alast-child+li%3Anth-child%28odd%29%3Anot%28%3Alast-child%29%22%3A+%7B%0A++++++++++textDecoration%3A+%22underline%22%0A++++++++%7D%2C%0A++++++++%22%3Aroot%22%3A+%7B%0A++++++++++%22--primary-color%22%3A+%22%23363%22%2C%0A++++++++++%22--sat%22%3A+%225%25%22%0A++++++++%7D%2C%0A++++++++%22%5Brole%3Dtablist%5D%22%3A+%7B%0A++++++++++%22--hue%22%3A+%22120%22%2C%0A++++++++++%22--sat%22%3A+%2230%25%22%0A++++++++%7D%2C%0A++++++++bg%3A+%22var%28--primary-color%29%22%2C%0A++++++++p%3A+%224px+10px%22%2C%0A++++++++display%3A+%22block%22%2C%0A++++++++maxWidth%3A+200%2C%0A++++++++m%3A+%22auto%22%2C%0A++++++++textAlign%3A+%22center%22%2C%0A++++++++borderRadius%3A+10%2C%0A++++++++border%3A+%222px+solid+%23696%22%2C%0A++++++++fontWeight%3A+700%2C%0A++++++++fontFamily%3A+%22sans-serif%22%2C%0A++++++++fontSize%3A+24%2C%0A++++++%7D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D#t=3" style="height:85vh"></iframe></section><input type="radio" class="duh7by" id="nesting-selector-input" name="toc"/><section aria-hidden="true" aria-labelledby="nesting-selector-tab" class="ornwae orx5mt" id="nesting-selector-panel" role="tabpanel" tabindex="-1"><h2>Nesting Selector</h2><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%7B%0A++++++++%22main%2C%23root%22%3A+%7B%0A++++++++++%22%26%3Esection%2Cdiv+%26%22%3A+%7B%0A++++++++++++color%3A+%22%23eee%22%0A++++++++++%7D%0A++++++++%7D%0A++++++%7D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D&amp;e=5%2C6&amp;s=1&amp;i=12-36#t=3"></iframe></section><input type="radio" class="duh7by" id="placeholder-classes-input" name="toc"/><section aria-hidden="true" aria-labelledby="placeholder-classes-tab" class="ornwae orx5mt" id="placeholder-classes-panel" role="tabpanel" tabindex="-1"><h2>Placeholder Classes (<code class="c8z8xf kcs4l4">%</code>)</h2><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cdiv%3E%0A++++++%3Cinput%0A++++++++className%3D%7Bcss%28%7B%0A++++++++++%22%25check%22%3A+true%0A++++++++%7D%29%7D%0A++++++++type%3D%22checkbox%22%0A++++++%2F%3E%0A++++++%3Cspan%0A++++++++className%3D%7Bcss%28%7B%0A++++++++++%22%25check%3Anot%28%3Achecked%29+%2B+%26%22%3A+%7B%0A++++++++++++bg%3A+%22%23363%22%0A++++++++++%7D%0A++++++++%7D%29%7D%0A++++++%3E%0A++++++++Buy+Now%21%0A++++++%3C%2Fspan%3E%0A++++%3C%2Fdiv%3E%0A++%29%0A%7D&amp;e=8%2C17&amp;s=1#t=3"></iframe></section><input type="radio" class="duh7by" id="smart-integers-input" name="toc"/><section aria-hidden="true" aria-labelledby="smart-integers-tab" class="ornwae orx5mt" id="smart-integers-panel" role="tabpanel" tabindex="-1"><h2>Smart Integers</h2><p>Converts integers to<!-- --> <code class="c8z8xf kcs4l4">px</code> values, except for those where it wouldn’t be correct. As examples,<!-- --> <code class="c8z8xf kcs4l4">lineHeight</code>,<!-- --> <code class="c8z8xf kcs4l4">order</code>, and<!-- --> <code class="c8z8xf kcs4l4">fontWeight</code>.</p><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%7B%0A++++++++bg%3A+%22%239c9%22%2C%0A++++++++color%3A+%22%23333%22%2C%0A++++++++p%3A+%224px+10px%22%2C%0A++++++++display%3A+%22block%22%2C%0A++++++++maxWidth%3A+200%2C%0A++++++++m%3A+%22auto%22%2C%0A++++++++textAlign%3A+%22center%22%2C%0A++++++++borderRadius%3A+10%2C%0A++++++++border%3A+%222px+solid+%23696%22%2C%0A++++++++fontWeight%3A+700%2C%0A++++++++fontFamily%3A+%22sans-serif%22%2C%0A++++++++fontSize%3A+24%2C%0A++++++%7D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D&amp;e=8%2C11%2C13%2C15&amp;s=5-7%2C9-11%2C21-23%2C41-43&amp;i=53-69%2C104-120%2C138-154%2C172-188#t=3"></iframe></section><input type="radio" class="duh7by" id="fallback-array-values-input" name="toc"/><section aria-hidden="true" aria-labelledby="fallback-array-values-tab" class="ornwae orx5mt" id="fallback-array-values-panel" role="tabpanel" tabindex="-1"><h2>Fallback Array Values</h2><p>Fallbacks use arrays.</p><iframe class="orrz0k" loading="lazy" src="./demo/?x=export+default+function+%28%29+%7B%0A++return+%28%0A++++%3Cspan%0A++++++className%3D%7Bcss%28%7B%0A++++++++bg%3A+%5B%0A++++++++++%22%239c9%22%2C%0A++++++++++%22rgba%28153%2C204%2C153%2C.8%29%22%2C%0A++++++++++%22lch%2877.463%25+31.76+141.167+%2F+80%25%29%22%0A++++++++%5D%2C%0A++++++++color%3A+%22%23333%22%2C%0A++++++++p%3A+%224px+10px%22%2C%0A++++++++display%3A+%22block%22%2C%0A++++++++maxWidth%3A+200%2C%0A++++++++m%3A+%22auto%22%2C%0A++++++++textAlign%3A+%22center%22%2C%0A++++++++borderRadius%3A+10%2C%0A++++++++border%3A+%222px+solid+%23696%22%2C%0A++++++++fontWeight%3A+700%2C%0A++++++++fontFamily%3A+%22sans-serif%22%2C%0A++++++++fontSize%3A+24%2C%0A++++++%7D%29%7D%0A++++%3E%0A++++++Buy+Now%21%0A++++%3C%2Fspan%3E%0A++%29%0A%7D&amp;e=5-9&amp;s=33-37&amp;i=2-28#t=3"></iframe></section><input type="radio" class="duh7by" id="zero-runtime-option-input" name="toc"/><section aria-hidden="true" aria-labelledby="zero-runtime-option-tab" class="ornwae orx5mt" id="zero-runtime-option-panel" role="tabpanel" tabindex="-1"><h2>Setup Not <em>Required</em></h2><p>Simply add the library to your project and import it in each file where it is used. No container, context, Babel configuration, or webpack plugins required.</p><p>If you wish to utilize the zero-runtime option, there is<!-- --> <em>some</em> setup needed, mostly to pre-render components and save the resulting styles to a css file.</p><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-bash line-numbers or7sv8" data-line="1,3"><code class="batbmf language-bash or3gr9">npm install @ptb/style
+# or
+yarn add @ptb/style</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="2" spellcheck="false">npm install @ptb/style
+# or
+yarn add @ptb/style</textarea></div><h2>Zero-Runtime Option</h2><p>Instead of importing from</p><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-js line-numbers or7sv8"><code class="batbmf language-js or3gr9">import { css } from &quot;@ptb/style&quot;</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="1" spellcheck="false">import { css } from &quot;@ptb/style&quot;</textarea></div><p>import the Babel macro instead:</p><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-js line-numbers or7sv8"><code class="batbmf language-js or3gr9">import { css } from &quot;@ptb/style/macro&quot;</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="1" spellcheck="false">import { css } from &quot;@ptb/style/macro&quot;</textarea></div></section><input type="radio" class="duh7by" id="-with-create-react-app-input" name="toc"/><section aria-hidden="true" aria-labelledby="-with-create-react-app-tab" class="ornwae orx5mt" id="-with-create-react-app-panel" role="tabpanel" tabindex="-1"><h2>With Create React App</h2><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-bash line-numbers or7sv8"><code class="batbmf language-bash or3gr9">yarn create react-app my-react-app
+cd my-react-app
+yarn add @ptb/style
+echo &#x27;&#x27; &gt; src/styles.css</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="1" spellcheck="false">yarn create react-app my-react-app
+cd my-react-app
+yarn add @ptb/style
+echo &#x27;&#x27; &gt; src/styles.css</textarea></div><h3>Add to <code class="c8z8xf kcs4l4">src/App.js</code></h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-jsx line-numbers or7sv8"><code class="batbmf language-jsx or3gr9">import { css } from &quot;@ptb/style/macro&quot;
+import &quot;./styles.css&quot;</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="2" spellcheck="false">import { css } from &quot;@ptb/style/macro&quot;
+import &quot;./styles.css&quot;</textarea></div><h3>Both <code class="c8z8xf kcs4l4">yarn start</code> or<!-- --> <code class="c8z8xf kcs4l4">yarn build</code> should work as expected, including hot reload.</h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-bash line-numbers or7sv8"><code class="batbmf language-bash or3gr9">yarn start
+# or
+yarn build</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="1" spellcheck="false">yarn start
+# or
+yarn build</textarea></div></section><input type="radio" class="duh7by" id="-with-gatsby-input" name="toc"/><section aria-hidden="true" aria-labelledby="-with-gatsby-tab" class="ornwae orx5mt" id="-with-gatsby-panel" role="tabpanel" tabindex="-1"></section><input type="radio" class="duh7by" id="-with-next-js-input" name="toc"/><section aria-hidden="true" aria-labelledby="-with-next-js-tab" class="ornwae orx5mt" id="-with-next-js-panel" role="tabpanel" tabindex="-1"><h2>With Next.js</h2><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-bash line-numbers or7sv8"><code class="batbmf language-bash or3gr9">yarn create next-app my-next-app
+cd my-next-app
+yarn add @ptb/style
+yarn add babel-plugin-macros
+echo &#x27;&#x27; &gt; styles/styles.css</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="3" spellcheck="false">yarn create next-app my-next-app
+cd my-next-app
+yarn add @ptb/style
+yarn add babel-plugin-macros
+echo &#x27;&#x27; &gt; styles/styles.css</textarea></div><h3>Create (or add to)<!-- --> <code class="c8z8xf kcs4l4">.babelrc</code></h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-js line-numbers or7sv8"><code class="batbmf language-js or3gr9">{
+  &quot;presets&quot;: [&quot;next/babel&quot;],
+  &quot;plugins&quot;: [&quot;babel-plugin-macros&quot;]
+}</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="3" spellcheck="false">{
+  &quot;presets&quot;: [&quot;next/babel&quot;],
+  &quot;plugins&quot;: [&quot;babel-plugin-macros&quot;]
+}</textarea></div><h3>Add to <code class="c8z8xf kcs4l4">package.json</code></h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-js line-numbers or7sv8"><code class="batbmf language-js or3gr9">  &quot;babelMacros&quot;: {
+    &quot;@ptb/style&quot;: {
+      &quot;output&quot;: &quot;styles/styles.css&quot;
+    }
+  }</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="3" spellcheck="false">  &quot;babelMacros&quot;: {
+    &quot;@ptb/style&quot;: {
+      &quot;output&quot;: &quot;styles/styles.css&quot;
+    }
+  }</textarea></div>),<h3>Add to <code class="c8z8xf kcs4l4">pages/_app.js</code></h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-js line-numbers or7sv8"><code class="batbmf language-js or3gr9">import &#x27;../styles/styles.css&#x27;</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="1" spellcheck="false">import &#x27;../styles/styles.css&#x27;</textarea></div><h3>Create (or add to)<!-- --> <code class="c8z8xf kcs4l4">pages/_document.js</code></h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-jsx line-numbers or7sv8"><code class="batbmf language-jsx or3gr9">import { getStyles } from &quot;@ptb/style&quot;
+import Document from &quot;next/document&quot;
+import { Fragment } from &quot;react&quot;
+
+export default class extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps =
+      await Document.getInitialProps(ctx)
+
+    return {
+      ... initialProps,
+      styles: (
+        &lt;Fragment&gt;
+          {initialProps.styles}
+          &lt;style
+            dangerouslySetInnerHTML={{
+              __html: getStyles ()
+            }}
+            data-creator=&quot;@ptb/style&quot; /&gt;
+        &lt;/Fragment&gt;
+      )
+    }
+  }
+}</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="1" spellcheck="false">import { getStyles } from &quot;@ptb/style&quot;
+import Document from &quot;next/document&quot;
+import { Fragment } from &quot;react&quot;
+
+export default class extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps =
+      await Document.getInitialProps(ctx)
+
+    return {
+      ... initialProps,
+      styles: (
+        &lt;Fragment&gt;
+          {initialProps.styles}
+          &lt;style
+            dangerouslySetInnerHTML={{
+              __html: getStyles ()
+            }}
+            data-creator=&quot;@ptb/style&quot; /&gt;
+        &lt;/Fragment&gt;
+      )
+    }
+  }
+}</textarea></div><h3>In each component file, for example<!-- --> <code class="c8z8xf kcs4l4">pages/index.js</code></h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-js line-numbers or7sv8"><code class="batbmf language-js or3gr9">import { css } from &quot;@ptb/style/macro&quot;</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="1" spellcheck="false">import { css } from &quot;@ptb/style/macro&quot;</textarea></div><h3>Start Next.js server</h3><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-bash line-numbers or7sv8"><code class="batbmf language-bash or3gr9">yarn dev</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="1" spellcheck="false">yarn dev</textarea></div></section><input type="radio" class="duh7by" id="-with-tailwind-css-input" name="toc"/><section aria-hidden="true" aria-labelledby="-with-tailwind-css-tab" class="ornwae orx5mt" id="-with-tailwind-css-panel" role="tabpanel" tabindex="-1"><h2>With<!-- --> <a class="oripas" href="https://tailwindcss.com/docs/utility-first">Tailwind CSS</a></h2><p>Using Tailwind with<!-- --> <code class="c8z8xf kcs4l4">@ptb/style</code> is possibly simpler than Tailwind on its own! The Babel macro<!-- --> <a class="oripas" href="https://github.com/ben-rogerson/twin.macro#readme"><code class="c8z8xf kcs4l4">twin.macro</code></a> <!-- -->generates a JavaScript object that is perfect as input for the<!-- --> <code class="c8z8xf kcs4l4">css</code> function.</p><p>First, add the required packages:</p><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-bash line-numbers or7sv8"><code class="batbmf language-bash or3gr9">yarn add babel-plugin-macros tailwindcss twin.macro</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="1" spellcheck="false">yarn add babel-plugin-macros tailwindcss twin.macro</textarea></div><p>Then, in each component file, import from<!-- --> <code class="c8z8xf kcs4l4">twin.macro</code> and call Tailwind CSS classes as a tagged template. At build time, the<!-- --> <code class="c8z8xf kcs4l4">tw``</code> expression will be replaced by a JavaScript object representing those styles.</p><p><strong>Note:</strong> The<!-- --> <code class="c8z8xf kcs4l4">twin.macro</code> import<!-- --> <em>must</em> be listed <em>before</em> the<!-- --> <code class="c8z8xf kcs4l4">@ptb/style</code> import.</p><div class="or1cqo"><pre aria-hidden="true" class="batbmf language-jsx line-numbers or7sv8"><code class="batbmf language-jsx or3gr9">import tw from &quot;twin.macro&quot;
+import { css } from &quot;@ptb/style/macro&quot;
+
+export default () =&gt; (
+  &lt;span
+    className={css([
+      tw`flex flex-col items-center justify-center h-screen`,
+      {
+        fontFamily: &quot;sans-serif&quot;,
+        fontSize: &quot;24px&quot;
+      }
+    ])}
+  &gt;
+    Buy Now!
+  &lt;/span&gt;
+)</code></pre><textarea class="batbmf or2bxt orctbj orshze ortniz orxge6" rows="3" spellcheck="false">import tw from &quot;twin.macro&quot;
+import { css } from &quot;@ptb/style/macro&quot;
+
+export default () =&gt; (
+  &lt;span
+    className={css([
+      tw`flex flex-col items-center justify-center h-screen`,
+      {
+        fontFamily: &quot;sans-serif&quot;,
+        fontSize: &quot;24px&quot;
+      }
+    ])}
+  &gt;
+    Buy Now!
+  &lt;/span&gt;
+)</textarea></div></section><input type="radio" class="duh7by" id="-with-vite-input" name="toc"/><section aria-hidden="true" aria-labelledby="-with-vite-tab" class="ornwae orx5mt" id="-with-vite-panel" role="tabpanel" tabindex="-1"></section></main></div></div><script type="module" src="/assets/src/pages/_default.page.client.jsx.4d2dd2cb.js"></script><script id="vite-plugin-ssr_pageContext" type="application/json">{"pageContext":{"_pageId":"/src/pages/style/index","pageProps":"!undefined","urlParsed":{"origin":null,"pathnameWithBaseUrl":"/style","hasBaseUrl":true,"search":{},"searchString":null,"hash":"","hashString":null,"isPageContextRequest":false,"pathname":"/style"},"urlPathname":"/style"}}</script></body></html>

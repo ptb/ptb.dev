@@ -1,0 +1,65 @@
+{
+  "node_modules/vite-plugin-ssr/dist/esm/node/page-files/pageFiles.js": {
+    "file": "pageFiles.js",
+    "src": "node_modules/vite-plugin-ssr/dist/esm/node/page-files/pageFiles.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/pages/index.page.jsx",
+      "src/pages/style/index.page.jsx",
+      "src/pages/style/convert/index.page.jsx",
+      "src/pages/style/demo/index.page.jsx",
+      "src/pages/_default.page.client.jsx",
+      "src/pages/_default.page.server.jsx"
+    ]
+  },
+  "src/pages/index.page.jsx": {
+    "file": "assets/index.page.ccf3031c.js",
+    "src": "src/pages/index.page.jsx",
+    "isDynamicEntry": true
+  },
+  "src/pages/style/index.page.jsx": {
+    "file": "assets/index.page.86e34117.js",
+    "src": "src/pages/style/index.page.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_editor.e60e46c9.js",
+      "_use-tabs.92d9d407.js"
+    ]
+  },
+  "_editor.e60e46c9.js": {
+    "file": "assets/editor.e60e46c9.js"
+  },
+  "_use-tabs.92d9d407.js": {
+    "file": "assets/use-tabs.92d9d407.js",
+    "imports": [
+      "_editor.e60e46c9.js"
+    ]
+  },
+  "src/pages/style/convert/index.page.jsx": {
+    "file": "assets/index.page.61cbf3cf.js",
+    "src": "src/pages/style/convert/index.page.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_editor.e60e46c9.js"
+    ]
+  },
+  "src/pages/style/demo/index.page.jsx": {
+    "file": "assets/index.page.ed2b2c31.js",
+    "src": "src/pages/style/demo/index.page.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_editor.e60e46c9.js",
+      "_use-tabs.92d9d407.js"
+    ]
+  },
+  "src/pages/_default.page.client.jsx": {
+    "file": "assets/_default.page.client.2ec61607.js",
+    "src": "src/pages/_default.page.client.jsx",
+    "isDynamicEntry": true
+  },
+  "src/pages/_default.page.server.jsx": {
+    "file": "assets/_default.page.server.bbd32eee.js",
+    "src": "src/pages/_default.page.server.jsx",
+    "isDynamicEntry": true
+  }
+}
