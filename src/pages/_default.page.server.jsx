@@ -44,7 +44,7 @@ export function render (context) {
     </StrictMode>
   )
 
-  const documentHtml = escapeInject `<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title> </title></head><body><div id="root">${dangerouslySkipEscape(
+  const documentHtml = escapeInject `<!DOCTYPE html><html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta charset="utf-8"/><title> </title><meta content="initial-scale=1,width=device-width" name="viewport"/></head><body><div id="root">${dangerouslySkipEscape(
     children
   )}</div></body></html>`
 
