@@ -36,7 +36,7 @@ var editor = require("./editor.e60e46c9.js");
 var useTabs = require("./use-tabs.92d9d407.js");
 var style = require("@ptb/style");
 var jsxRuntime = require("react/jsx-runtime");
-var classNames$6 = {
+var classNames$7 = {
   "code": "c8z8xf kcs4l4",
   "grid": "oreuk5",
   "head": "orz66k",
@@ -55,7 +55,7 @@ function Iframe(_a) {
   ]);
   const ref = react.useRef(null);
   return /* @__PURE__ */ jsxRuntime.jsx("iframe", __spreadValues({
-    className: classNames$6.iframe,
+    className: classNames$7.iframe,
     loading: "lazy",
     ref,
     title
@@ -67,14 +67,14 @@ function AtomicClasses() {
       children: "Atomic Classes"
     }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
       children: ["Each property/value pair creates an atomic class name by default. You\u2019ll notice that regardless of the order that the rules are listed, they always result in the same order in the stylesheet. That means that all of the", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "textAlign"
       }), " properties will always be together, which makes it possible to audit the styles by just reading.", " ", /* @__PURE__ */ jsxRuntime.jsxs("em", {
         children: ["This is a live editor, try changing some of the values for", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-          className: classNames$6.code,
+          className: classNames$7.code,
           children: "maxWidth"
         }), " or", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-          className: classNames$6.code,
+          className: classNames$7.code,
           children: "fontSize"
         }), " here and see what the effect is immediately."]
       }), " ", "Switch to the HTML tab and notice that the class name for that property is recalculated based on the value, but the two letter prefix that is based on the property does not change."]
@@ -92,10 +92,10 @@ function DeepMergeObjects() {
       children: "Deep Merge Objects"
     }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
       children: ["If you pass an array of objects as the first argument to the", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "css"
       }), " function, the objects will be expanded (as in the case of", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "bg"
       }), ") then deep merged. Only the \u201Csurviving\u201D property/value pairs are used."]
     }), /* @__PURE__ */ jsxRuntime.jsx(Iframe, {
@@ -112,7 +112,7 @@ function GroupedClasses() {
       children: "Grouped Classes"
     }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
       children: ["But if you prefer to have fewer class names attached to elements, that is an option, too. Just wrap the styles in an object with as the key. Depending on your needs, you could choose to group styles together under a single class name or individual classes depending on what your needs are. If you\u2019re planning on re-using a group of styles throughout your project, you\u2019ll want to group them with", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "&"
       }), ". It results in a slightly larger stylesheet, but fewer class names in the HTML."]
     }), /* @__PURE__ */ jsxRuntime.jsx(Iframe, {
@@ -123,8 +123,378 @@ function GroupedClasses() {
     })]
   });
 }
+var classNames$6 = style.create({
+  "$ui": {
+    "card": {
+      "borderRadius": ".4rem",
+      "boxShadow": "0 0 0 1px #000",
+      "flexGrow": 1,
+      "m": "1rem",
+      "width": "calc(33.3% - 2rem)"
+    },
+    "cards": {
+      "display": "flex",
+      "flexDirection": {
+        "Md": "row",
+        "Sm": "column"
+      },
+      "flexWrap": "wrap",
+      "m": "1rem"
+    }
+  },
+  "card": {
+    "& > h3": {
+      "m": 0
+    },
+    "& > p": {
+      "mb": 0
+    },
+    "bg": "rgba(255,255,255,.04)",
+    "borderRadius": "1rem",
+    "boxShadow": "0 0 4px 1px rgba(0,0,0,.1)",
+    "flexGrow": 1,
+    "m": ".5rem",
+    "Md": {
+      "minWidth": "16em",
+      "width": "calc(33.3% - 1rem)"
+    },
+    "p": "1.5rem"
+  },
+  "cards": {
+    "display": "flex",
+    "flexDirection": {
+      "Md": "row",
+      "Sm": "column"
+    },
+    "flexWrap": "wrap"
+  },
+  "code": {
+    "bg": "rgba(255,255,255,.1)",
+    "borderRadius": 3,
+    "boxShadow": "0 0 4px 1px rgba(0,0,0,.1)",
+    "display": "inline-block",
+    "px": 3,
+    "py": 0
+  },
+  "hero": {},
+  "install": {
+    "&:focus": {
+      "outline": "none"
+    },
+    "appearance": "none",
+    "bg": "rgba(255,255,255,.04)",
+    "border": "none",
+    "borderRadius": "1rem",
+    "boxShadow": "0 0 4px 1px rgba(0,0,0,.1)",
+    "color": "inherit",
+    "display": "block",
+    "fontFamily": "monospace",
+    "fontSize": "inherit",
+    "mx": "auto",
+    "p": "1rem",
+    "textAlign": "center",
+    "width": "22em"
+  },
+  "link": {
+    "&:hover": {
+      "textDecoration": "underline"
+    },
+    "color": "inherit",
+    "textDecoration": "none"
+  },
+  "section": {
+    "& > h2": {
+      "mx": "2rem"
+    },
+    "maxWidth": "120rem",
+    "mx": "auto"
+  },
+  "subtitle": {
+    "textAlign": "center"
+  },
+  "title": {
+    "fontFamily": "var(--sans)",
+    "fontSize": {
+      "Md": "4rem",
+      "Sm": "2.8rem"
+    },
+    "maxWidth": "12em",
+    "mx": "auto",
+    "my": 0,
+    "textAlign": "center"
+  }
+});
 function Introduction() {
-  return /* @__PURE__ */ jsxRuntime.jsx(jsxRuntime.Fragment, {});
+  function handleClick(e) {
+    const target = e.target;
+    target.select();
+    if (navigator.clipboard) {
+      try {
+        navigator.clipboard.writeText(target.value);
+      } catch (err) {
+        console.error(err);
+      }
+    } else {
+      document.execCommand("copy");
+    }
+  }
+  return /* @__PURE__ */ jsxRuntime.jsxs("article", {
+    children: [/* @__PURE__ */ jsxRuntime.jsxs("section", {
+      className: classNames$6.hero,
+      children: [/* @__PURE__ */ jsxRuntime.jsx("h1", {
+        className: classNames$6.title,
+        children: "Manage CSS Like a Boss. Declare Your Styles and You\u2019re Done."
+      }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
+        className: classNames$6.subtitle,
+        role: "doc-subtitle",
+        children: [/* @__PURE__ */ jsxRuntime.jsx("code", {
+          children: "@ptb/style"
+        }), " is a CSS compiler with a powerful, intuitive API that makes authoring CSS faster and easier."]
+      })]
+    }), /* @__PURE__ */ jsxRuntime.jsx("div", {
+      children: /* @__PURE__ */ jsxRuntime.jsx("input", {
+        className: classNames$6.install,
+        onClick: handleClick,
+        value: "npm install @ptb/style"
+      })
+    }), /* @__PURE__ */ jsxRuntime.jsxs("section", {
+      className: classNames$6.section,
+      children: [/* @__PURE__ */ jsxRuntime.jsx("h2", {
+        children: "Simple"
+      }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+        className: classNames$6.cards,
+        children: [/* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "No More Naming"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Skip naming and remembering class or component names. Names are generated automatically and consistently based on styles input."
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "One Core Function"
+          }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
+            children: ["The core function, named ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+              className: classNames$6.code,
+              children: "css"
+            }), ", parses and deduplicates all styles, returns class names, and dynamically applies them to the current web page."]
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Setup Not Required"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Perfect for prototyping ideas quickly. No theme providers, wrappers, special components, props, plugins, or build configurations needed."
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Separation of Concerns"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Styles are separate from structure. Imagine having to use a special type of component just to use Redux. Styles should be simple."
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Consistent Results"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "In any order, the same input will result in the same output, whether rendered at build time, server-side, or at runtime in the browser."
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "No More Conflicts"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Declare your styles and those styles are applied. No more specificity issues, naming collisions, or side effects from cascading styles."
+          })]
+        })]
+      })]
+    }), /* @__PURE__ */ jsxRuntime.jsxs("section", {
+      className: classNames$6.section,
+      children: [/* @__PURE__ */ jsxRuntime.jsx("h2", {
+        children: "Powerful"
+      }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+        className: classNames$6.cards,
+        children: [/* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Any Selector or None"
+          }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
+            children: ["Use any selector: ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+              className: classNames$6.link,
+              href: "https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors",
+              children: "type"
+            }), ", ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+              className: classNames$6.link,
+              href: "https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors",
+              children: "class"
+            }), ", ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+              className: classNames$6.link,
+              href: "https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors",
+              children: "ID"
+            }), ", ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+              className: classNames$6.link,
+              href: "https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors",
+              children: "universal"
+            }), ", ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+              className: classNames$6.link,
+              href: "https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors",
+              children: "attribute"
+            }), ", ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+              className: classNames$6.link,
+              href: "https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator",
+              children: "adjacent "
+            }), " ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+              className: classNames$6.link,
+              href: "https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator",
+              children: "sibling"
+            }), ", ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+              className: classNames$6.link,
+              href: "https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator",
+              children: "child"
+            }), ", or ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+              className: classNames$6.link,
+              href: "https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator",
+              children: "descendant"
+            }), " selectors, ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+              className: classNames$6.link,
+              href: "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes",
+              children: "pseudo classes"
+            }), " and ", /* @__PURE__ */ jsxRuntime.jsx("a", {
+              className: classNames$6.link,
+              href: "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements",
+              children: "elements"
+            }), "."]
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Real Media Queries"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Media queries can be used at the top of a group of styles, at the bottom under a CSS property, or nested inside of other media queries."
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Override Styles Easily"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Provide an array of styles and they will be deep merged. Start with a base set of styles followed by any modifications for easy variants."
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Sass-Style Nesting"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Nested rules can be complex and combined with commas. Each nested selector is combined separately and merged back into the selector list."
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Built-In Abbreviations"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Styled System inspired shorthand properties are built-in. Several common media queries have abbreviations and you can add your own."
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "DIY Shortcuts"
+          }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
+            children: ["Define abbreviations for CSS properties (using ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+              className: classNames$6.code,
+              children: "$properties"
+            }), "), conditional queries (", /* @__PURE__ */ jsxRuntime.jsx("code", {
+              className: classNames$6.code,
+              children: "$media"
+            }), " or ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+              className: classNames$6.code,
+              children: "$supports"
+            }), "), and vendor prefixes (", /* @__PURE__ */ jsxRuntime.jsx("code", {
+              className: classNames$6.code,
+              children: "$prefixes"
+            }), ")."]
+          })]
+        })]
+      })]
+    }), /* @__PURE__ */ jsxRuntime.jsxs("section", {
+      className: classNames$6.section,
+      children: [/* @__PURE__ */ jsxRuntime.jsx("h2", {
+        children: "Flexible"
+      }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+        className: classNames$6.cards,
+        children: [/* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Atomic or Group Names"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Automatically creates atomic class names per style declaration or group styles under a single class name. Or both, you get to choose."
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "CSR, SSR, or Build-Time"
+          }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
+            children: ["Universal tool that works with modern browsers and Node.js. Render at build-time (", /* @__PURE__ */ jsxRuntime.jsx("abbr", {
+              title: "Static Site Generator: e.g. Gatsby or Vite",
+              children: "SSG"
+            }), "), server-side (", /* @__PURE__ */ jsxRuntime.jsx("abbr", {
+              title: "Server-Side Rendering: e.g. Next.js or Remix",
+              children: "SSR"
+            }), "), or on the client (", /* @__PURE__ */ jsxRuntime.jsx("abbr", {
+              title: "Single Page Application: e.g. Create React App",
+              children: "SPA"
+            }), ")."]
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Variables and Snippets"
+          }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
+            children: ["Define theme variables or blocks of styles using ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+              className: classNames$6.code,
+              children: "$"
+            }), "-prefixed key names and reuse them later without needing a context or theme provider."]
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "React Or Any Framework"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Works great with React or any other JavaScript framework or even plain JavaScript. It\u2019s just a function and returns class names."
+          })]
+        })]
+      })]
+    }), /* @__PURE__ */ jsxRuntime.jsxs("section", {
+      className: classNames$6.section,
+      children: [/* @__PURE__ */ jsxRuntime.jsx("h2", {
+        children: "Performant"
+      }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+        className: classNames$6.cards,
+        children: [/* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Production-Ready"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Use the Babel macro to extract static styles to a CSS file. Styles are \u201Ccompiled away\u201D leaving just class names for a zero-runtime footprint."
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Optimized Output"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Styles are ordered simply and consistently. Selectors are parsed, de-duplicated, and grouped with identical declarations automatically."
+          })]
+        }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
+          className: classNames$6.card,
+          children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
+            children: "Modern CSS for Pros"
+          }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+            children: "Simple enough for a novice developer and powerful enough for the needs of an experienced team. Optimized from development to delivery."
+          })]
+        })]
+      })]
+    })]
+  });
 }
 function StylesAreJSObjects() {
   return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
@@ -277,7 +647,7 @@ function PlaceholderClasses() {
   return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
     children: [/* @__PURE__ */ jsxRuntime.jsxs("h2", {
       children: ["Placeholder Classes (", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "%"
       }), ")"]
     }), /* @__PURE__ */ jsxRuntime.jsx(Iframe, {
@@ -320,7 +690,7 @@ function CSSProperties() {
       children: "Shorthand Properties"
     }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
       children: ["Supports", " ", /* @__PURE__ */ jsxRuntime.jsx("a", {
-        className: classNames$6.link,
+        className: classNames$7.link,
         href: "https://styled-system.com/api/",
         children: "Styled System"
       }), " ", "shorthand properties."]
@@ -348,7 +718,7 @@ function CSSProperties() {
       }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
         children: [/* @__PURE__ */ jsxRuntime.jsxs("h3", {
           children: ["Shorthand", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-            className: classNames$6.code,
+            className: classNames$7.code,
             children: "$properties"
           })]
         }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
@@ -365,7 +735,7 @@ function FontFaceRules() {
   return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
     children: [/* @__PURE__ */ jsxRuntime.jsxs("h2", {
       children: [/* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "@font-face"
       }), " Rules"]
     }), /* @__PURE__ */ jsxRuntime.jsx(Iframe, {
@@ -377,7 +747,7 @@ function KeyframesRules() {
   return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
     children: [/* @__PURE__ */ jsxRuntime.jsxs("h2", {
       children: [/* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "@keyframes"
       }), " Rules"]
     }), /* @__PURE__ */ jsxRuntime.jsx(Iframe, {
@@ -406,7 +776,7 @@ function MediaQueries() {
       children: [/* @__PURE__ */ jsxRuntime.jsxs("div", {
         children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
           children: /* @__PURE__ */ jsxRuntime.jsx("code", {
-            className: classNames$6.code,
+            className: classNames$7.code,
             children: "$media"
           })
         }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
@@ -417,7 +787,7 @@ function MediaQueries() {
       }), /* @__PURE__ */ jsxRuntime.jsxs("div", {
         children: [/* @__PURE__ */ jsxRuntime.jsx("h3", {
           children: /* @__PURE__ */ jsxRuntime.jsx("code", {
-            className: classNames$6.code,
+            className: classNames$7.code,
             children: "$supports"
           })
         }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
@@ -433,7 +803,7 @@ function StoredVariables() {
   return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
     children: [/* @__PURE__ */ jsxRuntime.jsxs("h2", {
       children: ["Stored Variables Using", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "$"
       }), " Prefix"]
     }), /* @__PURE__ */ jsxRuntime.jsx(Iframe, {
@@ -445,12 +815,12 @@ function VendorPrefixes() {
   return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
     children: [" ", /* @__PURE__ */ jsxRuntime.jsxs("h2", {
       children: ["Stored Variables Using", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "$"
       }), " Prefix"]
     }), /* @__PURE__ */ jsxRuntime.jsx("h3", {
       children: /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "$prefixes"
       })
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
@@ -575,16 +945,16 @@ function SmartIntegers() {
       children: "Smart Integers"
     }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
       children: ["Converts integers to", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "px"
       }), " values, except for those where it wouldn\u2019t be correct. As examples,", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "lineHeight"
       }), ",", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "order"
       }), ", and", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "fontWeight"
       }), "."]
     }), /* @__PURE__ */ jsxRuntime.jsx(Iframe, {
@@ -602,7 +972,7 @@ function WithCreateReactApp() {
       children: ["yarn create react-app my-react-app", "cd my-react-app", "yarn add @ptb/style", "echo '' > src/styles.css"].join("\n")
     }), /* @__PURE__ */ jsxRuntime.jsxs("h3", {
       children: ["Add to ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "src/App.js"
       })]
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
@@ -611,10 +981,10 @@ function WithCreateReactApp() {
       children: [`import { css } from "@ptb/style/macro"`, `import "./styles.css"`].join("\n")
     }), /* @__PURE__ */ jsxRuntime.jsxs("h3", {
       children: ["Both ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "yarn start"
       }), " or", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "yarn build"
       }), " should work as expected, including hot reload."]
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
@@ -636,14 +1006,14 @@ function WithNextJs() {
       children: ["yarn create next-app my-next-app", "cd my-next-app", "yarn add @ptb/style", "yarn add babel-plugin-macros", "echo '' > styles/styles.css"].join("\n")
     }), /* @__PURE__ */ jsxRuntime.jsxs("h3", {
       children: ["Create (or add to)", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: ".babelrc"
       })]
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
       children: ["{", '  "presets": ["next/babel"],', '  "plugins": ["babel-plugin-macros"]', "}"].join("\n")
     }), /* @__PURE__ */ jsxRuntime.jsxs("h3", {
       children: ["Add to ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "package.json"
       })]
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
@@ -652,7 +1022,7 @@ function WithNextJs() {
       children: [`  "babelMacros": {`, `    "@ptb/style": {`, `      "output": "styles/styles.css"`, `    }`, `  }`].join("\n")
     }), "),", /* @__PURE__ */ jsxRuntime.jsxs("h3", {
       children: ["Add to ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "pages/_app.js"
       })]
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
@@ -661,7 +1031,7 @@ function WithNextJs() {
       children: `import '../styles/styles.css'`
     }), /* @__PURE__ */ jsxRuntime.jsxs("h3", {
       children: ["Create (or add to)", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "pages/_document.js"
       })]
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
@@ -670,7 +1040,7 @@ function WithNextJs() {
       children: [`import { getStyles } from "@ptb/style"`, `import Document from "next/document"`, `import { Fragment } from "react"`, ``, `export default class extends Document {`, `  static async getInitialProps(ctx) {`, `    const initialProps =`, `      await Document.getInitialProps(ctx)`, ``, `    return {`, `      ... initialProps,`, `      styles: (`, `        <Fragment>`, `          {initialProps.styles}`, `          <style`, `            dangerouslySetInnerHTML={{`, `              __html: getStyles ()`, `            }}`, `            data-creator="@ptb/style" />`, `        </Fragment>`, `      )`, `    }`, `  }`, `}`].join("\n")
     }), /* @__PURE__ */ jsxRuntime.jsxs("h3", {
       children: ["In each component file, for example", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "pages/index.js"
       })]
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
@@ -690,23 +1060,23 @@ function WithTailwindCSS() {
   return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
     children: [/* @__PURE__ */ jsxRuntime.jsxs("h2", {
       children: ["With", " ", /* @__PURE__ */ jsxRuntime.jsx("a", {
-        className: classNames$6.link,
+        className: classNames$7.link,
         href: "https://tailwindcss.com/docs/utility-first",
         children: "Tailwind CSS"
       })]
     }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
       children: ["Using Tailwind with", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "@ptb/style"
       }), " is possibly simpler than Tailwind on its own! The Babel macro", " ", /* @__PURE__ */ jsxRuntime.jsx("a", {
-        className: classNames$6.link,
+        className: classNames$7.link,
         href: "https://github.com/ben-rogerson/twin.macro#readme",
         children: /* @__PURE__ */ jsxRuntime.jsx("code", {
-          className: classNames$6.code,
+          className: classNames$7.code,
           children: "twin.macro"
         })
       }), " ", "generates a JavaScript object that is perfect as input for the", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "css"
       }), " function."]
     }), /* @__PURE__ */ jsxRuntime.jsx("p", {
@@ -717,24 +1087,24 @@ function WithTailwindCSS() {
       children: "yarn add babel-plugin-macros tailwindcss twin.macro"
     }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
       children: ["Then, in each component file, import from", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "twin.macro"
       }), " and call Tailwind CSS classes as a tagged template. At build time, the", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "tw``"
       }), " expression will be replaced by a JavaScript object representing those styles."]
     }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
       children: [/* @__PURE__ */ jsxRuntime.jsx("strong", {
         children: "Note:"
       }), " The", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "twin.macro"
       }), " import", " ", /* @__PURE__ */ jsxRuntime.jsx("em", {
         children: "must"
       }), " be listed ", /* @__PURE__ */ jsxRuntime.jsx("em", {
         children: "before"
       }), " the", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
-        className: classNames$6.code,
+        className: classNames$7.code,
         children: "@ptb/style"
       }), " import."]
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
@@ -801,15 +1171,15 @@ function Docs() {
   editor.useVisualViewport();
   const [checked, setChecked] = react.useState(false);
   return /* @__PURE__ */ jsxRuntime.jsxs("div", {
-    className: classNames$6.grid,
+    className: classNames$7.grid,
     children: [/* @__PURE__ */ jsxRuntime.jsx("input", {
       checked,
-      className: classNames$6.hide,
+      className: classNames$7.hide,
       id: "menu",
       onChange: () => setChecked(!checked),
       type: "checkbox"
     }), /* @__PURE__ */ jsxRuntime.jsxs("header", {
-      className: classNames$6.head,
+      className: classNames$7.head,
       children: [/* @__PURE__ */ jsxRuntime.jsx(Menu, {}), /* @__PURE__ */ jsxRuntime.jsx(Logo, {}), /* @__PURE__ */ jsxRuntime.jsx(ConvertLink, {}), /* @__PURE__ */ jsxRuntime.jsx(DemoLink, {}), /* @__PURE__ */ jsxRuntime.jsx(GitHubLink, {})]
     }), /* @__PURE__ */ jsxRuntime.jsx(SideMenu, {
       labels,
@@ -819,9 +1189,9 @@ function Docs() {
       setSelected,
       tabs
     }), /* @__PURE__ */ jsxRuntime.jsx("main", {
-      className: classNames$6.main,
+      className: classNames$7.main,
       children: /* @__PURE__ */ jsxRuntime.jsx(useTabs.Tabpanels, {
-        classNames: classNames$6,
+        classNames: classNames$7,
         group: "toc",
         labels,
         selected,

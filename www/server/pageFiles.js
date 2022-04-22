@@ -4,7 +4,7 @@ const pageFiles = {
   ".page": { "/src/pages/index.page.jsx": () => Promise.resolve().then(function() {
     return require("./assets/index.page.ccf3031c.js");
   }), "/src/pages/style/index.page.jsx": () => Promise.resolve().then(function() {
-    return require("./assets/index.page.86e34117.js");
+    return require("./assets/index.page.f83ab1b5.js");
   }), "/src/pages/style/convert/index.page.jsx": () => Promise.resolve().then(function() {
     return require("./assets/index.page.61cbf3cf.js");
   }), "/src/pages/style/demo/index.page.jsx": () => Promise.resolve().then(function() {

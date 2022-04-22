@@ -91,16 +91,16 @@ export function Convert ({ children = " " }) {
     [handleUpdate]
   )
 
-  /**
-    Respond to keyboard events.
-
-    @param {React.ChangeEvent<HTMLTextAreaElement>} e
-    - An Event object.
-
-    @returns {void}
-   */
-
   const onInput = useCallback(
+    /**
+      Respond to keyboard events.
+
+      @param {React.ChangeEvent<HTMLTextAreaElement>} e
+      - An Event object.
+
+      @returns {void}
+     */
+
     function onInput (e) {
       setInput(
         /** @type {HTMLTextAreaElement} */ (e.target).value || ""

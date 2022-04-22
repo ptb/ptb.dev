@@ -82,16 +82,16 @@ export function Demo ({ children }) {
   const [minify, setMinify] = useState("")
   const [inside, setInside] = useState("")
 
-  /**
-    Respond to keyboard events.
-
-    @param {React.ChangeEvent<HTMLTextAreaElement>} e
-    - An Event object.
-
-    @returns {void}
-   */
-
   const handleInput = useCallback(
+    /**
+      Respond to keyboard events.
+
+      @param {React.ChangeEvent<HTMLTextAreaElement>} e
+      - An Event object.
+
+      @returns {void}
+     */
+
     function onInput (e) {
       setCode(
         /** @type {HTMLTextAreaElement} */ (e.target).value || ""

@@ -104,16 +104,16 @@ export function Editor ({
     }
   }
 
-  /**
-    Update `<code>` element with `<textarea>` content on input events.
-
-    @param {React.ChangeEvent<HTMLTextAreaElement>} e
-    - An Event object.
-
-    @returns {void}
-    */
-
   const handleInput = useCallback(
+    /**
+      Update `<code>` element with `<textarea>` content on input events.
+
+      @param {React.ChangeEvent<HTMLTextAreaElement>} e
+      - An Event object.
+
+      @returns {void}
+     */
+
     function handleInput (e) {
       setValue(e.target.value || "")
 
