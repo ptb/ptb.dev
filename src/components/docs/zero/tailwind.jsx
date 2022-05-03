@@ -60,7 +60,7 @@ export function WithTailwindCSS () {
         <strong>Note:</strong> The{" "}
         <code className={classNames.code}>twin.macro</code> import{" "}
         <em>must</em> be listed <em>before</em> the{" "}
-        <code className={classNames.code}>@ptb/style</code> import.
+        <code className={classNames.code}>@ptb/style/macro</code> import.
       </p>
       <Editor lang="jsx">
         {[

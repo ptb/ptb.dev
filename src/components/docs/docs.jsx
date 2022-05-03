@@ -76,8 +76,8 @@ export function Docs () {
     ],
     "Values & Variables": ["Smart Integers", "Fallback Array Values"],
     /* eslint-disable-next-line sort-keys */
-    "Production Ready": [
-      "Zero–Runtime Option",
+    "Zero–Runtime Option": [
+      "Production Ready",
       "…with Create React App",
       "…with Gatsby",
       "…with Next.js",

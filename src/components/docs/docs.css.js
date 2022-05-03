@@ -70,6 +70,9 @@ export default create({
       }
     }
   },
+  "p": {
+    "mx": "1em"
+  },
   "radio": {
     "display": "none"
   },

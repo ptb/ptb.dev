@@ -85,6 +85,10 @@ export default create({
     "backgroundImage":
       "url(\"data:image/svg+xml,%3csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='60' cy='60' fill='hsl(40%2c40%25%2c80%25)' r='52'/%3e%3cpath d='M80 88c-64-56-14-62-8-44M52 56C16 96 92 90 80 66' fill='none' stroke='hsl(240%2c10%25%2c20%25)' stroke-width='6'/%3e%3c/svg%3e\")"
   },
+  "production-ready": {
+    "backgroundImage":
+      "url(\"data:image/svg+xml,%3csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='60' cy='60' fill='hsl(120,40%25,80%25)' r='52'/%3e%3cpath fill='hsl(240,10%25,20%25)' d='M44 32v56l48-28z'/%3e%3c/svg%3e\")"
+  },
   "placeholder-classes": {
     "backgroundImage":
       "url(\"data:image/svg+xml,%3csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='60' cy='60' fill='hsl(60%2c40%25%2c80%25)' r='52'/%3e%3cg fill='none' stroke='hsl(240%2c10%25%2c20%25)' stroke-width='6'%3e%3ccircle cx='45' cy='45' r='10'/%3e%3ccircle cx='75' cy='75' r='10'/%3e%3cpath d='m36 84 48-48'/%3e%3c/g%3e%3c/svg%3e\")"

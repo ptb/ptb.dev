@@ -44,6 +44,7 @@ var classNames$7 = {
   "iframe": "orrz0k",
   "link": "oripas",
   "main": "or0702 ort98m orwsln orz8ms",
+  "p": "egba71 eiba71",
   "radio": "duh7by",
   "tabpanel": "ornwae orx5mt"
 };
@@ -875,6 +876,7 @@ var classNames = {
   "keyframes-rules": "kdakmv",
   "media-queries": "kdn5jr",
   "nesting-selector": "kdcigh",
+  "production-ready": "kd4i24",
   "placeholder-classes": "kd5iit",
   "smart-integers": "kdh6y9",
   "stored-variables": "kd6g9l",
@@ -999,7 +1001,64 @@ function WithCreateReactApp() {
   });
 }
 function WithGatsby() {
-  return /* @__PURE__ */ jsxRuntime.jsx(jsxRuntime.Fragment, {});
+  return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
+    children: [/* @__PURE__ */ jsxRuntime.jsx("h2", {
+      children: "With Gatsby"
+    }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
+      className: classNames$7.p,
+      children: [/* @__PURE__ */ jsxRuntime.jsx("a", {
+        className: classNames$7.link,
+        href: "https://www.gatsbyjs.com/",
+        children: "Gatsby"
+      }), " has built-in Babel macro support. No Babel setup is required."]
+    }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
+      lang: "bash",
+      rows: 1,
+      children: ["npx gatsby new my-gatsby-app", "cd my-gatsby-app", "npm install @ptb/style", "echo '' > src/styles.css", `echo 'import "./src/styles.css"' >> gatsby-browser.js`, "npm run develop"].join("\n")
+    }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
+      className: classNames$7.p,
+      children: ["To use, import the ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "css"
+      }), " function and use with the ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "className"
+      }), " prop."]
+    }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
+      lang: "jsx",
+      rows: 2,
+      children: [`import * as React from "react"`, `import { css } from "@ptb/style/macro"`, ``, `const IndexPage = () => (`, `  <div`, `    className={css({`, `      alignItems: "center",`, `      display: "flex",`, `      fontSize: "64px",`, `      height: "100vh",`, `      justifyContent: "center"`, `    })}`, `  >`, `    Hello!`, `  </div>`, `)`, ``, `export default IndexPage`].join("\n")
+    }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
+      className: classNames$7.p,
+      children: ["Run the ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "gatsby build"
+      }), " command and styles will be extracted to ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "src/styles.css"
+      }), " and the ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "css"
+      }), " function call will be replaced with the associated class names."]
+    }), /* @__PURE__ */ jsxRuntime.jsxs("h3", {
+      children: ["Insert Styles Into ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "<head>"
+      })]
+    }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
+      className: classNames$7.p,
+      children: ["To prevent a flash of unstyled content (FOUC), you can use the included Gatsby plugin to inline the styles in the HTML ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "<head>"
+      }), ". Just add the plugin to the ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "gatsby-config.js"
+      }), " file."]
+    }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
+      lang: "js",
+      children: [`module.exports = {`, `  plugins: [`, `    {`, `      resolve: "@ptb/style"`, `    }`, `  ]`, `}`].join("\n")
+    })]
+  });
 }
 function WithNextJs() {
   return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
@@ -1109,7 +1168,7 @@ function WithTailwindCSS() {
         children: "before"
       }), " the", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
         className: classNames$7.code,
-        children: "@ptb/style"
+        children: "@ptb/style/macro"
       }), " import."]
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
       lang: "jsx",
@@ -1118,39 +1177,80 @@ function WithTailwindCSS() {
   });
 }
 function WithVite() {
-  return /* @__PURE__ */ jsxRuntime.jsx(jsxRuntime.Fragment, {});
-}
-function ZeroRuntimeOption() {
   return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
-    children: [/* @__PURE__ */ jsxRuntime.jsxs("h2", {
-      children: ["Setup Not ", /* @__PURE__ */ jsxRuntime.jsx("em", {
-        children: "Required"
-      })]
-    }), /* @__PURE__ */ jsxRuntime.jsx("p", {
-      children: "Simply add the library to your project and import it in each file where it is used. No container, context, Babel configuration, or webpack plugins required."
-    }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
-      children: ["If you wish to utilize the zero-runtime option, there is", " ", /* @__PURE__ */ jsxRuntime.jsx("em", {
-        children: "some"
-      }), " setup needed, mostly to pre-render components and save the resulting styles to a css file."]
+    children: [/* @__PURE__ */ jsxRuntime.jsx("h2", {
+      children: "With Vite"
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
-      "data-line": "1,3",
       lang: "bash",
-      rows: 2,
-      children: `npm install @ptb/style
-# or
-yarn add @ptb/style`
-    }), /* @__PURE__ */ jsxRuntime.jsx("h2", {
-      children: "Zero-Runtime Option"
-    }), /* @__PURE__ */ jsxRuntime.jsx("p", {
-      children: "Instead of importing from"
+      children: [`npm create vite@latest my-vite-app`, `cd my-vite-app`, `npm install @ptb/style`, `npm install vite-plugin-babel-macros`, `echo '' > src/styles.css`, `npm run dev`].join("\n")
+    }), /* @__PURE__ */ jsxRuntime.jsxs("h3", {
+      children: ["Add to", " ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "vite.config.js"
+      })]
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
-      rows: 1,
-      children: `import { css } from "@ptb/style"`
-    }), /* @__PURE__ */ jsxRuntime.jsx("p", {
-      children: "import the Babel macro instead:"
+      lang: "jsx",
+      children: [`import reactPlugin from "@vitejs/plugin-react"`, `import { defineConfig } from "vite"`, `import macroPlugin from "vite-plugin-babel-macros"`, ``, `export default defineConfig({`, `  plugins: [`, `    macroPlugin(),`, `    reactPlugin(),`, `  ]`, `})`].join("\n")
+    }), /* @__PURE__ */ jsxRuntime.jsxs("h3", {
+      children: ["Add to ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "src/main.jsx"
+      })]
     }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
+      lang: "jsx",
       rows: 1,
-      children: `import { css } from "@ptb/style/macro"`
+      children: [`import "./styles.css"`].join("\n")
+    }), /* @__PURE__ */ jsxRuntime.jsxs("h3", {
+      children: ["Add to ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "src/App.jsx"
+      })]
+    }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
+      lang: "jsx",
+      children: [`import { css } from "@ptb/style/macro"`, ``, `export default function App () {`, `  return (`, `    <div`, `      className={css({`, `        alignItems: "center",`, `        display: "flex",`, `        fontSize: "64px",`, `        height: "100vh",`, `        justifyContent: "center"`, `       })}`, `    >`, `      Hello!`, `    </div>`, `  )`, `}`].join("\n")
+    })]
+  });
+}
+function ProductionReady() {
+  return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, {
+    children: [/* @__PURE__ */ jsxRuntime.jsx("h2", {
+      children: "Production Ready"
+    }), /* @__PURE__ */ jsxRuntime.jsxs("p", {
+      className: classNames$7.p,
+      children: [/* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "@ptb/style"
+      }), " is the most flexible tool kit available to style your web app. Add styles dynamically at runtime in the browser, server-side render and insert styles into the page ", /* @__PURE__ */ jsxRuntime.jsx("code", {
+        className: classNames$7.code,
+        children: "<head>"
+      }), ", or extract styles to a CSS file during server-side rendering or at build-time."]
+    }), /* @__PURE__ */ jsxRuntime.jsx("h3", {
+      children: "Single-Page or Client-Side"
+    }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+      className: classNames$7.p,
+      children: "Without any setup, it can be used immediately to add styles and class names in any single-page application or client-side rendered app."
+    }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
+      lang: "bash",
+      rows: 1,
+      children: `npm install @ptb/style`
+    }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+      className: classNames$7.p,
+      children: "or"
+    }), /* @__PURE__ */ jsxRuntime.jsx(editor.Editor, {
+      lang: "bash",
+      rows: 1,
+      children: `yarn add @ptb/style`
+    }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+      className: classNames$7.p,
+      children: "Simply add to your project, then import it in each file where it is used. No container, context, Babel configuration, or webpack plugins required."
+    }), /* @__PURE__ */ jsxRuntime.jsx("h3", {
+      children: "Server-Side Rendering"
+    }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+      className: classNames$7.p
+    }), /* @__PURE__ */ jsxRuntime.jsx("h3", {
+      children: "Build-Time Rendering"
+    }), /* @__PURE__ */ jsxRuntime.jsx("p", {
+      className: classNames$7.p
     })]
   });
 }
@@ -1160,7 +1260,7 @@ function Docs() {
     "Shorthand Keys": ["Stored Variables", "CSS Properties", "Media Queries", "Font Face Rules", "Keyframes Rules", "Vendor Prefixes"],
     "Selectors": ["Complex Selectors", "Nesting Selector", "Placeholder Classes"],
     "Values & Variables": ["Smart Integers", "Fallback Array Values"],
-    "Production Ready": ["Zero\u2013Runtime Option", "\u2026with Create React App", "\u2026with Gatsby", "\u2026with Next.js", "\u2026with Tailwind CSS", "\u2026with Vite"]
+    "Zero\u2013Runtime Option": ["Production Ready", "\u2026with Create React App", "\u2026with Gatsby", "\u2026with Next.js", "\u2026with Tailwind CSS", "\u2026with Vite"]
   };
   const {
     labels,
@@ -1199,7 +1299,7 @@ function Docs() {
         group: "toc",
         labels,
         selected,
-        children: [Introduction, StylesAreJSObjects, DeepMergeObjects, AtomicClasses, GroupedClasses, StoredVariables, CSSProperties, MediaQueries, FontFaceRules, KeyframesRules, VendorPrefixes, ComplexSelectors, NestingSelector, PlaceholderClasses, SmartIntegers, FallbackArrayValues, ZeroRuntimeOption, WithCreateReactApp, WithGatsby, WithNextJs, WithTailwindCSS, WithVite].map(function(Component, i) {
+        children: [Introduction, StylesAreJSObjects, DeepMergeObjects, AtomicClasses, GroupedClasses, StoredVariables, CSSProperties, MediaQueries, FontFaceRules, KeyframesRules, VendorPrefixes, ComplexSelectors, NestingSelector, PlaceholderClasses, SmartIntegers, FallbackArrayValues, ProductionReady, WithCreateReactApp, WithGatsby, WithNextJs, WithTailwindCSS, WithVite].map(function(Component, i) {
           return /* @__PURE__ */ jsxRuntime.jsx(useTabs.Tabpanel, {
             children: /* @__PURE__ */ jsxRuntime.jsx(Component, {})
           }, i);

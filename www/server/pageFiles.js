@@ -2,7 +2,7 @@
 Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
 const pageFiles = {
   ".page": { "/src/pages/style/index.page.jsx": () => Promise.resolve().then(function() {
-    return require("./assets/index.page.acbfb8e1.js");
+    return require("./assets/index.page.ce90d98d.js");
   }), "/src/pages/style/convert/index.page.jsx": () => Promise.resolve().then(function() {
     return require("./assets/index.page.61cbf3cf.js");
   }), "/src/pages/style/demo/index.page.jsx": () => Promise.resolve().then(function() {
