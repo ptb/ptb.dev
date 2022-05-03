@@ -1,10 +1,8 @@
 "use strict";
 Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
 const pageFiles = {
-  ".page": { "/src/pages/index.page.jsx": () => Promise.resolve().then(function() {
-    return require("./assets/index.page.ccf3031c.js");
-  }), "/src/pages/style/index.page.jsx": () => Promise.resolve().then(function() {
-    return require("./assets/index.page.f83ab1b5.js");
+  ".page": { "/src/pages/style/index.page.jsx": () => Promise.resolve().then(function() {
+    return require("./assets/index.page.acbfb8e1.js");
   }), "/src/pages/style/convert/index.page.jsx": () => Promise.resolve().then(function() {
     return require("./assets/index.page.61cbf3cf.js");
   }), "/src/pages/style/demo/index.page.jsx": () => Promise.resolve().then(function() {

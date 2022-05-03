@@ -4,7 +4,6 @@
     "src": "node_modules/vite-plugin-ssr/dist/esm/node/page-files/pageFiles.js",
     "isEntry": true,
     "dynamicImports": [
-      "src/pages/index.page.jsx",
       "src/pages/style/index.page.jsx",
       "src/pages/style/convert/index.page.jsx",
       "src/pages/style/demo/index.page.jsx",
@@ -12,13 +11,8 @@
       "src/pages/_default.page.server.jsx"
     ]
   },
-  "src/pages/index.page.jsx": {
-    "file": "assets/index.page.ccf3031c.js",
-    "src": "src/pages/index.page.jsx",
-    "isDynamicEntry": true
-  },
   "src/pages/style/index.page.jsx": {
-    "file": "assets/index.page.f83ab1b5.js",
+    "file": "assets/index.page.acbfb8e1.js",
     "src": "src/pages/style/index.page.jsx",
     "isDynamicEntry": true,
     "imports": [

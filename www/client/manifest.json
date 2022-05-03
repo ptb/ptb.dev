@@ -1,10 +1,9 @@
 {
   "src/pages/_default.page.client.jsx": {
-    "file": "assets/src/pages/_default.page.client.jsx.d8755aa4.js",
+    "file": "assets/src/pages/_default.page.client.jsx.74eff065.js",
     "src": "src/pages/_default.page.client.jsx",
     "isEntry": true,
     "dynamicImports": [
-      "src/pages/index.page.jsx",
       "src/pages/style/index.page.jsx",
       "src/pages/style/convert/index.page.jsx",
       "src/pages/style/demo/index.page.jsx",
@@ -14,43 +13,35 @@
       "assets/src/pages/_default.page.client.jsx.6982bac2.css"
     ]
   },
-  "src/pages/index.page.jsx": {
-    "file": "assets/index.page.cf2ca0a8.js",
-    "src": "src/pages/index.page.jsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/pages/_default.page.client.jsx"
-    ]
-  },
   "src/pages/style/index.page.jsx": {
-    "file": "assets/index.page.add0cc6c.js",
+    "file": "assets/index.page.b3baebfc.js",
     "src": "src/pages/style/index.page.jsx",
     "isDynamicEntry": true,
     "imports": [
       "src/pages/_default.page.client.jsx",
-      "_editor.0f1ab381.js",
-      "_use-tabs.db068e1a.js"
+      "_editor.70ed8d2a.js",
+      "_use-tabs.8376af22.js"
     ]
   },
-  "_editor.0f1ab381.js": {
-    "file": "assets/editor.0f1ab381.js",
+  "_editor.70ed8d2a.js": {
+    "file": "assets/editor.70ed8d2a.js",
     "imports": [
       "src/pages/_default.page.client.jsx"
     ]
   },
-  "_use-tabs.db068e1a.js": {
-    "file": "assets/use-tabs.db068e1a.js",
+  "_use-tabs.8376af22.js": {
+    "file": "assets/use-tabs.8376af22.js",
     "imports": [
-      "_editor.0f1ab381.js",
+      "_editor.70ed8d2a.js",
       "src/pages/_default.page.client.jsx"
     ]
   },
   "src/pages/style/convert/index.page.jsx": {
-    "file": "assets/index.page.963ee678.js",
+    "file": "assets/index.page.d0c8dce5.js",
     "src": "src/pages/style/convert/index.page.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_editor.0f1ab381.js",
+      "_editor.70ed8d2a.js",
       "src/pages/_default.page.client.jsx",
       "__commonjsHelpers.2b8b3a19.js"
     ]
@@ -59,14 +50,14 @@
     "file": "assets/_commonjsHelpers.2b8b3a19.js"
   },
   "src/pages/style/demo/index.page.jsx": {
-    "file": "assets/index.page.770819b6.js",
+    "file": "assets/index.page.bbf2195a.js",
     "src": "src/pages/style/demo/index.page.jsx",
     "isDynamicEntry": true,
     "imports": [
-      "_editor.0f1ab381.js",
+      "_editor.70ed8d2a.js",
       "src/pages/_default.page.client.jsx",
       "__commonjsHelpers.2b8b3a19.js",
-      "_use-tabs.db068e1a.js"
+      "_use-tabs.8376af22.js"
     ]
   },
   "src/pages/_default.page.server.jsx": {

@@ -23,6 +23,7 @@ export function ConvertLink () {
     <a
       className={cx(classNames.link, classNames.convert)}
       href="./convert/"
+      target="_blank"
     >
       Convert
     </a>

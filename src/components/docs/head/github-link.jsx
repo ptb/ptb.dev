@@ -23,6 +23,8 @@ export function GitHubLink () {
     <a
       className={cx(classNames.link, classNames.github)}
       href="https://github.com/ptb/style"
+      rel="noreferrer"
+      target="_blank"
     >
       GitHub
     </a>
