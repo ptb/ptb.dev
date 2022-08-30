@@ -44,7 +44,7 @@
     "react-runner": "1.0.3",
     "sucrase": "3.21.0",
     "typescript": "latest",
-    "vite": "2.9.7",
+    "vite": "2.9.13",
     "vite-plugin-babel-macros": "1.0.6",
     "vite-plugin-ssr": "0.3.64"
   },
