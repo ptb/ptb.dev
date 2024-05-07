@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v3
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           cache: pnpm
@@ -31,8 +31,11 @@ jobs:
           directory: ${{ env.CLOUDFLARE_DIRECTORY }}
           environmentName: ${{ github.ref_name }}
           projectName: ${{ env.CLOUDFLARE_PROJECT_NAME }}
-      - uses: mydea/action-wait-for-api@main
+      - if: ${{ env.CLOUDFLARE_PROJECT_NAME != '' }}
+        uses: mydea/action-wait-for-api@45d9c58
         with:
+          interval: 5
+          timeout: 40
           url: ${{ steps.publish.outputs.url }}
       - if: ${{ env.LHCI_GITHUB_APP_TOKEN != '' }}
         uses: treosh/lighthouse-ci-action@v11
