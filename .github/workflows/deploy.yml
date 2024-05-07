@@ -32,7 +32,7 @@ jobs:
           environmentName: ${{ github.ref_name }}
           projectName: ${{ env.CLOUDFLARE_PROJECT_NAME }}
       - if: ${{ env.CLOUDFLARE_PROJECT_NAME != '' }}
-        uses: mydea/action-wait-for-api@45d9c58
+        uses: mydea/action-wait-for-api@45d9c58e690337a05eb5ae14a1478f29eacbf9db
         with:
           interval: 5
           timeout: 40
