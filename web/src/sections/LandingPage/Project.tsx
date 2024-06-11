@@ -46,10 +46,10 @@ export const Project: FC<
         })}
       >
         <img
+          alt={`Screenshot of ${title}`}
           className={css({
             boxShadow: "var(--shadow1)",
             maxWidth: "90%"
-            // transform: "rotate(2deg)"
           })}
           src={imgSrc}
         />
