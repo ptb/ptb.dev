@@ -1,43 +1,50 @@
-import { default as reactPlugin } from "@vitejs/plugin-react"
-import { defineConfig } from "vite"
-import { default as tsPathsPlugin } from "vite-tsconfig-paths"
+import { execSync } from "node:child_process"
+import { join } from "node:path"
 
-export default defineConfig({
+import { default as reactPlugin } from "@vitejs/plugin-react"
+// import { default as vikePlugin } from "vike/plugin"
+import { defineConfig } from "vite"
+import { default as istanbulPlugin } from "vite-plugin-istanbul"
+
+/** @type {import("vite").UserConfigFnObject} */
+export const getConfig = ({ mode }) => ({
   build: {
-    assetsDir: "",
     emptyOutDir: true,
-    outDir: "../www",
+    outDir: join(
+      execSync("git rev-parse --show-toplevel").toString().trim(),
+      "www"
+    ),
     rollupOptions: {
       output: {
-        assetFileNames: ({ name = "" }) => {
-          const info = name.split(".")
-          const extType = info[info.length - 1]
-
-          switch (true) {
-            case /\.(eot|[ot]tf|woff2?)$/.test(name):
-              return `fonts/[name]-[hash].${extType}`
-            case /\.(gif|jpe?g|png|svg|webp)$/.test(name):
-              return `image/[name]-[hash].${extType}`
-            case /\.(css)$/.test(name):
-              return `style/[name]-[hash].${extType}`
-            default:
-              return `asset/[name]-[hash].${extType}`
-          }
-        },
         chunkFileNames: "js/[name]-[hash].js",
-        entryFileNames: "js/[name]-[hash].js",
-        manualChunks: (id) => {
-          switch (true) {
-            case /(react(-dom)?|scheduler)@/.test(id):
-              return "react"
-            case id.includes("node_modules"):
-              return "share"
-            default:
-              return "index"
-          }
-        }
+        entryFileNames: "js/[name]-[hash].js"
       }
+    },
+    sourcemap: mode === "release" ? "hidden" : true
+  },
+  plugins: [
+    istanbulPlugin({
+      forceBuildInstrument: true,
+      include: join(process.cwd(), "src")
+    }),
+    reactPlugin()
+    // vikePlugin({ prerender: true })
+  ],
+  preview: {
+    host: "0.0.0.0",
+    port: 3000
+  },
+  resolve: {
+    alias: {
+      "@": join(process.cwd(), "src")
     }
   },
-  plugins: [tsPathsPlugin(), reactPlugin()]
+  server: {
+    host: "0.0.0.0",
+    port: 3000
+  }
 })
+
+export default defineConfig(({ command, mode }) =>
+  getConfig({ command, mode })
+)

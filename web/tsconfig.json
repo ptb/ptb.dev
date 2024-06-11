@@ -5,11 +5,16 @@
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "types": [
+      "vike-react",
+      "vite/client"
+    ]
   },
   "extends": "@ptb/typescript-config",
   "include": [
-    "./src",
-    "./vite.config.ts"
+    "./*.js",
+    "./*.ts",
+    "./src"
   ]
 }

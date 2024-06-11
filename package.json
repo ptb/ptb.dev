@@ -1,18 +1,19 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "devDependencies": {
-    "@ptb/eslint-config": "2024.5.1",
-    "@ptb/prettier-config": "2024.5.1",
-    "@ptb/typescript-config": "2024.5.1"
+    "@ptb/eslint-config": "2024.6.5-1",
+    "@ptb/prettier-config": "2024.6.1",
+    "@ptb/typescript-config": "2024.6.1"
   },
   "engines": {
-    "node": "20.12.2",
-    "pnpm": "9.1.0"
+    "node": "20.14.0",
+    "pnpm": "9.2.0"
   },
-  "packageManager": "pnpm@9.1.0+sha256.22e36fba7f4880ecf749a5ca128b8435da085ecd49575e7fb9e64d6bf4fad394",
+  "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771",
   "private": true,
   "scripts": {
-    "build:web": "pnpm --dir web build"
+    "build:web": "pnpm --dir web build",
+    "start:web": "pnpm --dir web start"
   },
   "type": "module",
   "workspaces": [
