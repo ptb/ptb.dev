@@ -266,6 +266,15 @@ importers:
         specifier: 5.3.1
         version: 5.3.1(@types/node@20.14.8)
     devDependencies:
+      '@playwright/experimental-ct-react':
+        specifier: 1.44.1
+        version: 1.44.1(@types/node@20.14.8)(vite@5.3.1(@types/node@20.14.8))
+      '@ptb/playwright-config':
+        specifier: 2024.6.24
+        version: 2024.6.24(@types/node@20.14.8)(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.3.1(@types/node@20.14.8))
+      '@ptb/test':
+        specifier: 2024.6.24
+        version: 2024.6.24(@types/node@20.14.8)(vite@5.3.1(@types/node@20.14.8))
       '@ptb/typescript-config':
         specifier: 2024.6.24
         version: 2024.6.24
@@ -879,6 +888,9 @@ packages:
 
   '@ptb/eslint-config@2024.6.24':
     resolution: {integrity: sha512-mP6BbqZJkvcPhgU30bvMoAMxnHJL9AcVuOq0j72u7AtS5P/V6x4XVVHUuoeqsh04akeBKtKg39bbRZGHRa58Aw==}
+
+  '@ptb/playwright-config@2024.6.24':
+    resolution: {integrity: sha512-dsz9uJ9BmN6qFf5XflMVjJPo1Vh6F3+uMAuEt/5M9a9sLi8GaZfxZTKpLOcPAFmqujjfFI6WzPOG1MnWsymO1Q==}
 
   '@ptb/prettier-config@2024.6.24':
     resolution: {integrity: sha512-0Bf5/TOQ0cZ9dWfoDmWnDIQffrvcc9JzO0oKSEn4XS1jqelTsT5uVIxmx0nQScE2kR5+mLska1vOKJrDghqzTQ==}
@@ -3867,6 +3879,28 @@ snapshots:
       - react-dom
       - sass
       - supports-color
+
+  '@ptb/playwright-config@2024.6.24(@types/node@20.14.8)(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.3.1(@types/node@20.14.8))':
+    dependencies:
+      '@playwright/experimental-ct-react': 1.44.1(@types/node@20.14.8)(vite@5.3.1(@types/node@20.14.8))
+      '@ptb/test': 2024.6.24(@types/node@20.14.8)(vite@5.3.1(@types/node@20.14.8))
+      '@ptb/vite-config': 2024.6.24(@types/node@20.14.8)(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@types/node'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - happy-dom
+      - jsdom
+      - less
+      - lightningcss
+      - react-streaming
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - vite
 
   '@ptb/prettier-config@2024.6.24':
     dependencies:

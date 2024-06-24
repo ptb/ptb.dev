@@ -10,6 +10,9 @@
     "vite": "5.3.1"
   },
   "devDependencies": {
+    "@playwright/experimental-ct-react": "1.44.1",
+    "@ptb/playwright-config": "2024.6.24",
+    "@ptb/test": "2024.6.24",
     "@ptb/typescript-config": "2024.6.24",
     "@types/node": "20.14.8",
     "@types/react": "18.3.3",
@@ -24,7 +27,8 @@
     "check:type": "tsc --noEmit --project tsconfig.json --skipLibCheck",
     "serve": "vite preview",
     "start": "vite dev",
-    "test": "pnpm test:unit",
+    "test": "pnpm test:unit; pnpm test:spec",
+    "test:spec": "TYPE=spec playwright test",
     "test:unit": "TYPE=unit vitest run"
   },
   "type": "module"
