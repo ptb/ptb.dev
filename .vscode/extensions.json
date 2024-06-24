@@ -2,6 +2,7 @@
   "recommendations": [
     "EditorConfig.EditorConfig",
     "PascalReitermann93.vscode-yaml-sort",
+    "expo.vscode-expo-tools",
     "ms-playwright.playwright",
     "pflannery.vscode-versionlens",
     "richie5um2.vscode-sort-json",
