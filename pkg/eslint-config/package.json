@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "dependencies": {
+    "@next/eslint-plugin-next": "14.2.4",
+    "@stylistic/eslint-plugin": "2.2.2",
+    "@tanstack/eslint-plugin-query": "5.43.1",
+    "@typescript-eslint/eslint-plugin": "7.13.1",
+    "@typescript-eslint/parser": "7.13.1",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.4",
+    "eslint-plugin-fp": "2.3.0",
+    "eslint-plugin-import": "npm:eslint-plugin-i@2.29.1",
+    "eslint-plugin-jsdoc": "48.4.0",
+    "eslint-plugin-jsx-a11y": "6.9.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "6.2.0",
+    "eslint-plugin-react": "7.34.3",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-plugin-react-native": "4.1.0",
+    "eslint-plugin-react-refresh": "0.4.7",
+    "eslint-plugin-sort-destructure-keys": "2.0.0",
+    "eslint-plugin-sort-keys": "2.3.5",
+    "eslint-plugin-storybook": "0.8.0",
+    "eslint-plugin-typescript-sort-keys": "3.2.0",
+    "eslint-plugin-unicorn": "54.0.0",
+    "globals": "15.6.0",
+    "next": "14.2.4",
+    "typescript": "5.5.2"
+  },
+  "devDependencies": {
+    "@ptb/typescript-config": "2024.6.24",
+    "@types/eslint": "8.56.10",
+    "@types/node": "20.14.8"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "main": "./eslint.config.js",
+  "name": "@ptb/eslint-config",
+  "type": "module",
+  "types": "./types.d.ts",
+  "version": "2024.6.24"
+}
