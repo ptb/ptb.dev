@@ -1,8 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "@storybook/types"
+    ]
+  },
   "extends": "@ptb/typescript-config",
   "include": [
     "${configDir}/.ct/*.js",
+    "${configDir}/.sb/*.ts",
     "${configDir}/*.js",
     "${configDir}/*.ts",
     "${configDir}/src"
