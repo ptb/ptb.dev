@@ -27,8 +27,9 @@
     "check:type": "tsc --noEmit --project tsconfig.json --skipLibCheck",
     "serve": "vite preview",
     "start": "vite dev",
-    "test": "pnpm test:unit; pnpm test:spec",
+    "test": "pnpm test:unit; pnpm test:test; pnpm test:spec",
     "test:spec": "TYPE=spec playwright test",
+    "test:test": "TYPE=test playwright test",
     "test:unit": "TYPE=unit vitest run"
   },
   "type": "module"
