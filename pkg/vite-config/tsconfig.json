@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "vike-react",
+      "vite/client",
+      "vitest"
+    ]
+  },
+  "extends": "@ptb/typescript-config"
+}
