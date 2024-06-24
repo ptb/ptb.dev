@@ -112,6 +112,25 @@ importers:
         specifier: 20.14.8
         version: 20.14.8
 
+  pkg/playwright-config:
+    dependencies:
+      '@playwright/experimental-ct-react':
+        specifier: 1.44.1
+        version: 1.44.1(@types/node@20.14.8)(vite@5.3.1(@types/node@20.14.8))
+      '@ptb/test':
+        specifier: 2024.6.24
+        version: 2024.6.24(@types/node@20.14.8)(vite@5.3.1(@types/node@20.14.8))
+      '@ptb/vite-config':
+        specifier: 2024.6.24
+        version: 2024.6.24(@types/node@20.14.8)(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+    devDependencies:
+      '@ptb/typescript-config':
+        specifier: 2024.6.24
+        version: 2024.6.24
+      '@types/node':
+        specifier: 20.14.8
+        version: 20.14.8
+
   pkg/prettier-config:
     dependencies:
       '@typescript-eslint/parser':
@@ -823,6 +842,9 @@ packages:
 
   '@ptb/typescript-config@2024.6.24':
     resolution: {integrity: sha512-hgv4ywsI3LqiF7bFIhwwQv8Orj+FENfJmLKtGE4C2Q+V1nlGwwBYoppNhh2Rt1WNLknRfBKv1DLYDKtJ1/6uVA==}
+
+  '@ptb/vite-config@2024.6.24':
+    resolution: {integrity: sha512-Tpu4hfB5kuWT7THr8M+MtqEeAxMxcQxeXlNvejOcXZoQl/qsjhzk4rhT1VVrrpO8Mk3F43lKPUX0SnNgNWWx6Q==}
 
   '@rollup/rollup-android-arm-eabi@4.18.0':
     resolution: {integrity: sha512-Tya6xypR10giZV1XzxmH5wr25VcZSncG0pZIjfePT0OVBvqNEurzValetGNarVrGiq66EBVAFn15iYX4w6FKgQ==}
@@ -3832,6 +3854,36 @@ snapshots:
   '@ptb/typescript-config@2024.6.24':
     dependencies:
       typescript: 5.5.2
+
+  '@ptb/vite-config@2024.6.24(@types/node@20.14.8)(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+    dependencies:
+      '@ptb/test': 2024.6.24(@types/node@20.14.8)(vite@5.3.1(@types/node@20.14.8))
+      '@ptb/typescript-config': 2024.6.24
+      '@vitejs/plugin-react': 4.3.1(vite@5.3.1(@types/node@20.14.8))
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      vike: 0.4.177(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.3.1(@types/node@20.14.8))
+      vike-react: 0.4.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vike@0.4.177(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.3.1(@types/node@20.14.8)))(vite@5.3.1(@types/node@20.14.8))
+      vite: 5.3.1(@types/node@20.14.8)
+      vite-plugin-babel-macros: 1.0.6(vite@5.3.1(@types/node@20.14.8))
+      vite-plugin-istanbul: 6.0.2(vite@5.3.1(@types/node@20.14.8))
+      vitest: 1.6.0(@types/node@20.14.8)
+      vitest-monocart-coverage: 1.1.2(vitest@1.6.0(@types/node@20.14.8))
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@types/node'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - happy-dom
+      - jsdom
+      - less
+      - lightningcss
+      - react-streaming
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
 
   '@rollup/rollup-android-arm-eabi@4.18.0':
     optional: true

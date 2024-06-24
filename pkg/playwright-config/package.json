@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "dependencies": {
+    "@playwright/experimental-ct-react": "1.44.1",
+    "@ptb/test": "2024.6.24",
+    "@ptb/vite-config": "2024.6.24"
+  },
+  "devDependencies": {
+    "@ptb/typescript-config": "2024.6.24",
+    "@types/node": "20.14.8"
+  },
+  "main": "./playwright.config.js",
+  "name": "@ptb/playwright-config",
+  "scripts": {
+    "postinstall": "playwright install --with-deps"
+  },
+  "type": "module",
+  "types": "./types.d.ts",
+  "version": "2024.6.24"
+}
