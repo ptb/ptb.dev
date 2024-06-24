@@ -14,14 +14,18 @@
     "@types/node": "20.14.8",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
-    "typescript": "5.5.2"
+    "typescript": "5.5.2",
+    "vitest": "1.6.0",
+    "vitest-monocart-coverage": "1.1.2"
   },
   "private": true,
   "scripts": {
     "build": "vite build --mode release",
     "check:type": "tsc --noEmit --project tsconfig.json --skipLibCheck",
     "serve": "vite preview",
-    "start": "vite dev"
+    "start": "vite dev",
+    "test": "pnpm test:unit",
+    "test:unit": "TYPE=unit vitest run"
   },
   "type": "module"
 }
