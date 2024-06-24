@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "engines": {
+    "node": "^20.9 || ^22",
+    "pnpm": "^9"
+  },
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "./api",
+    "./app",
+    "./doc",
+    "./lib",
+    "./pkg/*",
+    "./sql",
+    "./web"
+  ]
+}
