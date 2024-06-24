@@ -40,5 +40,6 @@
     "sortJSONValues": false,
     "sortJSONValuesReverse": false
   },
-  "typescript.preferences.preferTypeOnlyAutoImports": true
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

@@ -6,4 +6,35 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    devDependencies:
+      '@ptb/typescript-config':
+        specifier: 2024.6.24
+        version: 2024.6.24
+      typescript:
+        specifier: 5.5.2
+        version: 5.5.2
+
+  pkg/typescript-config:
+    dependencies:
+      typescript:
+        specifier: 5.5.2
+        version: 5.5.2
+
+packages:
+
+  '@ptb/typescript-config@2024.6.24':
+    resolution: {integrity: sha512-hgv4ywsI3LqiF7bFIhwwQv8Orj+FENfJmLKtGE4C2Q+V1nlGwwBYoppNhh2Rt1WNLknRfBKv1DLYDKtJ1/6uVA==}
+
+  typescript@5.5.2:
+    resolution: {integrity: sha512-NcRtPEOsPFFWjobJEtfihkLCZCXZt/os3zf8nTxjVH3RvTSxjrCamJpbExGvYOF+tFHc3pA65qpdwPbzjohhew==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  '@ptb/typescript-config@2024.6.24':
+    dependencies:
+      typescript: 5.5.2
+
+  typescript@5.5.2: {}
