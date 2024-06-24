@@ -1,0 +1,14 @@
+{
+  "output": [
+    "summary"
+  ],
+  "pre-commit": {
+    "commands": {
+      "check": {
+        "glob": "*.{cjs,js,jsx,mjs,ts,tsx}",
+        "run": "pnpm check"
+      }
+    },
+    "parallel": true
+  }
+}

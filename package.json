@@ -4,6 +4,7 @@
     "@ptb/eslint-config": "2024.6.24",
     "@ptb/prettier-config": "2024.6.24",
     "@ptb/typescript-config": "2024.6.24",
+    "lefthook": "1.6.18",
     "typescript": "5.5.2"
   },
   "engines": {
@@ -11,6 +12,10 @@
     "pnpm": "^9"
   },
   "private": true,
+  "scripts": {
+    "check": "pnpm --parallel --reporter-hide-prefix --stream -r '/check/'",
+    "postinstall": "lefthook install"
+  },
   "type": "module",
   "workspaces": [
     "./api",
