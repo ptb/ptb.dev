@@ -4,9 +4,17 @@
   ],
   "pre-commit": {
     "commands": {
-      "check": {
+      "check:lint": {
         "glob": "*.{cjs,js,jsx,mjs,ts,tsx}",
-        "run": "pnpm check"
+        "run": "pnpm check:lint {staged_files}"
+      },
+      "check:tidy": {
+        "glob": "*.{cjs,js,jsx,mjs,ts,tsx}",
+        "run": "pnpm check:tidy {staged_files}"
+      },
+      "check:type": {
+        "glob": "*.{ts,tsx}",
+        "run": "pnpm check:type"
       }
     },
     "parallel": true

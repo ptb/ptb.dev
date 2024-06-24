@@ -13,7 +13,9 @@
   },
   "private": true,
   "scripts": {
-    "check": "pnpm --parallel --reporter-hide-prefix --stream -r '/check/'",
+    "check:lint": "eslint --max-warnings 0 --no-warn-ignored --report-unused-disable-directives",
+    "check:tidy": "prettier --check",
+    "check:type": "pnpm --parallel --reporter-hide-prefix --stream -r '/check:type/'",
     "postinstall": "lefthook install"
   },
   "type": "module",

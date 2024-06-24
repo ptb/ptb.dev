@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "dependencies": {
+    "@ptb/vite-config": "2024.6.24",
+    "@vitejs/plugin-react": "4.3.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "vike": "0.4.177",
+    "vike-react": "0.4.14",
+    "vite": "5.3.1"
+  },
+  "devDependencies": {
+    "@ptb/typescript-config": "2024.6.24",
+    "@types/node": "20.14.8",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "typescript": "5.5.2"
+  },
+  "private": true,
+  "scripts": {
+    "build": "vite build --mode release",
+    "check:type": "tsc --noEmit --project tsconfig.json --skipLibCheck",
+    "serve": "vite preview",
+    "start": "vite dev"
+  },
+  "type": "module"
+}

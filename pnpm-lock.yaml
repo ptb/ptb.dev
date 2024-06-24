@@ -242,6 +242,46 @@ importers:
         specifier: 5.5.2
         version: 5.5.2
 
+  web:
+    dependencies:
+      '@ptb/vite-config':
+        specifier: 2024.6.24
+        version: 2024.6.24(@types/node@20.14.8)(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@vitejs/plugin-react':
+        specifier: 4.3.1
+        version: 4.3.1(vite@5.3.1(@types/node@20.14.8))
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
+      vike:
+        specifier: 0.4.177
+        version: 0.4.177(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.3.1(@types/node@20.14.8))
+      vike-react:
+        specifier: 0.4.14
+        version: 0.4.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vike@0.4.177(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(vite@5.3.1(@types/node@20.14.8)))(vite@5.3.1(@types/node@20.14.8))
+      vite:
+        specifier: 5.3.1
+        version: 5.3.1(@types/node@20.14.8)
+    devDependencies:
+      '@ptb/typescript-config':
+        specifier: 2024.6.24
+        version: 2024.6.24
+      '@types/node':
+        specifier: 20.14.8
+        version: 20.14.8
+      '@types/react':
+        specifier: 18.3.3
+        version: 18.3.3
+      '@types/react-dom':
+        specifier: 18.3.0
+        version: 18.3.0
+      typescript:
+        specifier: 5.5.2
+        version: 5.5.2
+
 packages:
 
   '@ampproject/remapping@2.3.0':
