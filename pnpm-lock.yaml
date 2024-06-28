@@ -284,6 +284,9 @@ importers:
 
   web:
     dependencies:
+      '@ptb/style':
+        specifier: 1.0.0
+        version: 1.0.0
       '@ptb/vite-config':
         specifier: 2024.6.24
         version: 2024.6.24(@types/node@20.14.8)(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.31.1)
@@ -1910,6 +1913,10 @@ packages:
 
   '@ptb/prettier-config@2024.6.24':
     resolution: {integrity: sha512-0Bf5/TOQ0cZ9dWfoDmWnDIQffrvcc9JzO0oKSEn4XS1jqelTsT5uVIxmx0nQScE2kR5+mLska1vOKJrDghqzTQ==}
+
+  '@ptb/style@1.0.0':
+    resolution: {integrity: sha512-97F0+Yo+EJE8/ordM9NFudfDf2IKyzymwRvh4ifGW9hUN+DH3mMn30s7+Yvw5WBzZP6vEyVj6NYjLE7WB1tjYQ==}
+    hasBin: true
 
   '@ptb/test@2024.6.24':
     resolution: {integrity: sha512-yZI5Va90JOLZfiekCi0XpZvJSte4ZUbdaKxfp7u9EzjZBqpHvUm3QP/qeLqPGGlhPuV/D5tEek0tB7LkjScz3w==}
@@ -9673,6 +9680,8 @@ snapshots:
       - prettier-plugin-svelte
       - supports-color
       - svelte-eslint-parser
+
+  '@ptb/style@1.0.0': {}
 
   '@ptb/test@2024.6.24(@types/node@20.14.8)(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))':
     dependencies:
