@@ -64,8 +64,10 @@ export const styles = create({
       m: 0,
       maskImage:
         "linear-gradient(90deg, transparent, #000 var(--16px), #000 calc(100% - var(--16px)), transparent 100%)",
+      MsOverflowStyle: "none",
       overflowX: "auto",
-      p: 0
+      p: 0,
+      scrollbarWidth: "none"
     },
     "& ul a": {
       alignItems: "center",
@@ -80,9 +82,14 @@ export const styles = create({
       margin: "var(--8px)",
       padding: "var(--4px) var(--12px)"
     },
-    "&::-webkit-scrollbar": {
-      display: "none",
+    "& ul::-webkit-scrollbar": {
       height: 0
+    },
+    "& ul::-webkit-scrollbar-thumb": {
+      bg: "transparent"
+    },
+    "& ul::-webkit-scrollbar-track": {
+      bg: "transparent"
     }
   },
   hero: {

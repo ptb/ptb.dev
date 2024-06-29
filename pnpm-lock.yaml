@@ -316,11 +316,11 @@ importers:
         specifier: 1.44.1
         version: 1.44.1(@types/node@20.14.8)(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       '@ptb/playwright-config':
-        specifier: 2024.6.24
-        version: 2024.6.24(@types/node@20.14.8)(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
+        specifier: 2024.6.29
+        version: 2024.6.29(@types/node@20.14.8)(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       '@ptb/test':
-        specifier: 2024.6.24
-        version: 2024.6.24(@types/node@20.14.8)(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
+        specifier: 2024.6.29
+        version: 2024.6.29(@types/node@20.14.8)(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       '@ptb/typescript-config':
         specifier: 2024.6.24
         version: 2024.6.24
@@ -1908,8 +1908,8 @@ packages:
   '@ptb/eslint-config@2024.6.24':
     resolution: {integrity: sha512-mP6BbqZJkvcPhgU30bvMoAMxnHJL9AcVuOq0j72u7AtS5P/V6x4XVVHUuoeqsh04akeBKtKg39bbRZGHRa58Aw==}
 
-  '@ptb/playwright-config@2024.6.24':
-    resolution: {integrity: sha512-dsz9uJ9BmN6qFf5XflMVjJPo1Vh6F3+uMAuEt/5M9a9sLi8GaZfxZTKpLOcPAFmqujjfFI6WzPOG1MnWsymO1Q==}
+  '@ptb/playwright-config@2024.6.29':
+    resolution: {integrity: sha512-yFdUt0i297YjN4zjMD8EtXubWOZLgDd7IJHR1qCCp+3DKAQudKNuKx7FHH9g6fx/xMgodbI/JMPOQmbJSfUw5w==}
 
   '@ptb/prettier-config@2024.6.24':
     resolution: {integrity: sha512-0Bf5/TOQ0cZ9dWfoDmWnDIQffrvcc9JzO0oKSEn4XS1jqelTsT5uVIxmx0nQScE2kR5+mLska1vOKJrDghqzTQ==}
@@ -1920,6 +1920,9 @@ packages:
 
   '@ptb/test@2024.6.24':
     resolution: {integrity: sha512-yZI5Va90JOLZfiekCi0XpZvJSte4ZUbdaKxfp7u9EzjZBqpHvUm3QP/qeLqPGGlhPuV/D5tEek0tB7LkjScz3w==}
+
+  '@ptb/test@2024.6.29':
+    resolution: {integrity: sha512-2SZZ51Vbc5TC0/jXA3wzVKvX+IzXwSOk8dDac0kHRb/T1yhFaJd5e3zpg7PAFV74awSslwQdgW9K8ee519QoRw==}
 
   '@ptb/typescript-config@2024.6.24':
     resolution: {integrity: sha512-hgv4ywsI3LqiF7bFIhwwQv8Orj+FENfJmLKtGE4C2Q+V1nlGwwBYoppNhh2Rt1WNLknRfBKv1DLYDKtJ1/6uVA==}
@@ -9647,7 +9650,7 @@ snapshots:
       - sass
       - supports-color
 
-  '@ptb/playwright-config@2024.6.24(@types/node@20.14.8)(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))':
+  '@ptb/playwright-config@2024.6.29(@types/node@20.14.8)(react-streaming@0.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))':
     dependencies:
       '@playwright/experimental-ct-react': 1.44.1(@types/node@20.14.8)(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       '@ptb/test': 2024.6.24(@types/node@20.14.8)(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
@@ -9684,6 +9687,23 @@ snapshots:
   '@ptb/style@1.0.0': {}
 
   '@ptb/test@2024.6.24(@types/node@20.14.8)(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))':
+    dependencies:
+      '@playwright/experimental-ct-react': 1.44.1(@types/node@20.14.8)(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
+      '@playwright/test': 1.44.1
+      monocart-coverage-reports: 2.8.5
+      react: 18.3.1
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - vite
+
+  '@ptb/test@2024.6.29(@types/node@20.14.8)(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))':
     dependencies:
       '@playwright/experimental-ct-react': 1.44.1(@types/node@20.14.8)(terser@5.31.1)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       '@playwright/test': 1.44.1

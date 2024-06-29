@@ -12,9 +12,9 @@
   "main": "./playwright.config.js",
   "name": "@ptb/playwright-config",
   "scripts": {
-    "postinstall": "playwright install --with-deps"
+    "postinstall": "test -n \"$SKIP_POSTINSTALL\" || playwright install --with-deps"
   },
   "type": "module",
   "types": "./types.d.ts",
-  "version": "2024.6.24"
+  "version": "2024.6.29"
 }

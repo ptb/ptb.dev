@@ -18,8 +18,8 @@
   "devDependencies": {
     "@chromatic-com/storybook": "1.5.0",
     "@playwright/experimental-ct-react": "1.44.1",
-    "@ptb/playwright-config": "2024.6.24",
-    "@ptb/test": "2024.6.24",
+    "@ptb/playwright-config": "2024.6.29",
+    "@ptb/test": "2024.6.29",
     "@ptb/typescript-config": "2024.6.24",
     "@storybook/addon-essentials": "8.1.10",
     "@storybook/addon-interactions": "8.1.10",
