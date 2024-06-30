@@ -1,1 +1,1 @@
-export const title = " "
+export const title = "ptb.dev - Peter T Bosse II"

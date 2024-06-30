@@ -173,7 +173,6 @@ export const TestingPost: FC = () => (
               <strong>across different browsers</strong>, ensuring
               your application works consistently for all users.
             </li>
-
             <li>
               <em>Enhanced Debugging:</em> Access to browser{" "}
               <strong>developer tools</strong> during tests makes

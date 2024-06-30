@@ -1,13 +1,13 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "dependencies": {
-    "@playwright/experimental-ct-react": "1.44.1",
-    "@ptb/test": "2024.6.24",
+    "@playwright/experimental-ct-react": "1.45.0",
+    "@ptb/test": "2024.6.29",
     "@ptb/vite-config": "2024.6.24"
   },
   "devDependencies": {
     "@ptb/typescript-config": "2024.6.24",
-    "@types/node": "20.14.8"
+    "@types/node": "20.14.9"
   },
   "main": "./playwright.config.js",
   "name": "@ptb/playwright-config",

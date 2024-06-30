@@ -14,6 +14,14 @@ export const Head = () => (
       href="/styles.css"
       rel="stylesheet"
     />
+    <link
+      href="https://bigfundj.com"
+      rel="preconnect"
+    />
+    <link
+      href="https://ajax.googleapis.com"
+      rel="preconnect"
+    />
     <meta
       content="initial-scale=1,width=device-width"
       name="viewport"

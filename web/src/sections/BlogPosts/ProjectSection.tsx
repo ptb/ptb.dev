@@ -18,12 +18,14 @@ export const ProjectSection: FC<
       {iframeSrc ? (
         <iframe
           height="768"
+          loading="lazy"
           src={iframeSrc}
           width="1024"
         />
       ) : (
         <img
           alt={`Screenshot of ${title}`}
+          loading="lazy"
           src={imgSrc}
         />
       )}
