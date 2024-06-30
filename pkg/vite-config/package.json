@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "dependencies": {
-    "@ptb/test": "2024.6.29",
+    "@ptb/test": "2024.6.30",
     "@ptb/typescript-config": "2024.6.24",
     "@vitejs/plugin-react": "4.3.1",
     "react": "18.3.1",
@@ -26,5 +26,5 @@
   "name": "@ptb/vite-config",
   "type": "module",
   "types": "./types.d.ts",
-  "version": "2024.6.24"
+  "version": "2024.6.30"
 }
