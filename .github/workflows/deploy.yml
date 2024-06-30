@@ -24,6 +24,8 @@ jobs:
           cache: pnpm
           node-version-file: package.json
       - run: pnpm add -g wrangler && SKIP_POSTINSTALL=1 pnpm i && pnpm build:web
+        env:
+          SKIP_POSTINSTALL: 1
       - id: publish
         if: ${{ env.CLOUDFLARE_PROJECT_NAME != '' }}
         uses: ptb/cf-pages-action@v1.6.0
