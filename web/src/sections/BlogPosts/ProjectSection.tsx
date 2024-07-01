@@ -26,7 +26,7 @@ export const ProjectSection: FC<
         />
         <img
           alt={`Screenshot of ${title}`}
-          loading="lazy"
+          {...(/hivebrite/i.test(title) ? {} : { loading: "lazy" })}
           src={`${imgSrc}.jpg`}
         />
       </picture>
