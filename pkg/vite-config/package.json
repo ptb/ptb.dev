@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "dependencies": {
-    "@ptb/test": "2024.6.30",
-    "@ptb/typescript-config": "2024.6.24",
+    "@ptb/test": "2024.7.1",
+    "@ptb/typescript-config": "2024.7.1",
     "@vitejs/plugin-react": "4.3.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -15,8 +15,8 @@
     "vitest-monocart-coverage": "1.1.2"
   },
   "devDependencies": {
-    "@ptb/eslint-config": "2024.6.24",
-    "@ptb/prettier-config": "2024.6.24",
+    "@ptb/eslint-config": "2024.7.1",
+    "@ptb/prettier-config": "2024.7.1",
     "@types/node": "20.14.9",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
@@ -26,5 +26,5 @@
   "name": "@ptb/vite-config",
   "type": "module",
   "types": "./types.d.ts",
-  "version": "2024.6.30"
+  "version": "2024.7.1"
 }

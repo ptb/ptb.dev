@@ -13,7 +13,7 @@
     "eslint-plugin-jsdoc": "48.5.0",
     "eslint-plugin-jsx-a11y": "6.9.0",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "6.2.0",
+    "eslint-plugin-promise": "6.4.0",
     "eslint-plugin-react": "7.34.3",
     "eslint-plugin-react-hooks": "4.6.2",
     "eslint-plugin-react-native": "4.1.0",
@@ -28,7 +28,7 @@
     "typescript": "5.5.2"
   },
   "devDependencies": {
-    "@ptb/typescript-config": "2024.6.24",
+    "@ptb/typescript-config": "2024.7.1",
     "@types/eslint": "8.56.10",
     "@types/node": "20.14.9"
   },
@@ -40,5 +40,5 @@
   "name": "@ptb/eslint-config",
   "type": "module",
   "types": "./types.d.ts",
-  "version": "2024.6.24"
+  "version": "2024.7.1"
 }
