@@ -1,4 +1,4 @@
-import { create } from "@ptb/style/index"
+import { create } from "@ptb/style/macro"
 
 export const styles = create({
   header: {

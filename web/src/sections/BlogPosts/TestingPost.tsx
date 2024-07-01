@@ -1,5 +1,5 @@
 /* eslint-disable @stylistic/jsx-child-element-spacing */
-import { css } from "@ptb/style/index"
+import { css } from "@ptb/style/macro"
 import type { FC } from "react"
 
 import { BlogPost } from "./BlogPost"
