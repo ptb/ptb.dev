@@ -7,7 +7,7 @@ import { ProjectSection } from "./ProjectSection"
 export const ProjectPost: FC = () => (
   <BlogPost tags={["projects"]}>
     <ProjectSection
-      imgSrc="/projects/hivebrite.com.png"
+      imgSrc="/projects/hivebrite.com"
       title="Hivebrite"
     >
       <p>
@@ -30,7 +30,7 @@ export const ProjectPost: FC = () => (
       </p>
     </ProjectSection>
     <ProjectSection
-      imgSrc="/projects/minibardelivery.com.png"
+      imgSrc="/projects/minibardelivery.com"
       title="Minibar Delivery"
     >
       <p>
@@ -54,7 +54,7 @@ export const ProjectPost: FC = () => (
     </ProjectSection>
     <ProjectSection
       iframeSrc="https://bigfundj.com/music/"
-      imgSrc="/projects/bigfundj.com.png"
+      imgSrc="/projects/bigfundj.com"
       title="BIG FUN Disc Jockeys"
     >
       <p>

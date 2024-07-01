@@ -8,27 +8,28 @@ export const ProjectSection: FC<
     imgSrc: string
     title: string
   }>
-> = ({ children, iframeSrc, imgSrc, title }) => (
+> = ({ children, imgSrc, title }) => (
   <article className={styles["project"]}>
     <div>
       <h3>{title}</h3>
       {children}
     </div>
     <div>
-      {iframeSrc ? (
-        <iframe
-          height="768"
-          loading="lazy"
-          src={iframeSrc}
-          width="1024"
+      <picture>
+        <source
+          srcSet={`${imgSrc}.avif`}
+          type="image/avif"
         />
-      ) : (
+        <source
+          srcSet={`${imgSrc}.webp`}
+          type="image/webp"
+        />
         <img
           alt={`Screenshot of ${title}`}
           loading="lazy"
-          src={imgSrc}
+          src={`${imgSrc}.jpg`}
         />
-      )}
+      </picture>
     </div>
   </article>
 )

@@ -143,10 +143,21 @@ export const TestingPost: FC = () => (
           </p>
         </div>
         <div>
-          <img
-            alt="Example unit test"
-            src="/projects/unit-test.png"
-          />
+          <picture>
+            <source
+              srcSet="/projects/unit-test.avif"
+              type="image/avif"
+            />
+            <source
+              srcSet="/projects/unit-test.webp"
+              type="image/webp"
+            />
+            <img
+              alt="Example unit test"
+              loading="lazy"
+              src="/projects/unit-test.jpg"
+            />
+          </picture>
         </div>
       </div>
       <div className={styles["project"]}>
@@ -191,10 +202,21 @@ export const TestingPost: FC = () => (
           </ul>
         </div>
         <div>
-          <img
-            alt="Example unit test"
-            src="/projects/component-test.png"
-          />
+          <picture>
+            <source
+              srcSet="/projects/component-test.avif"
+              type="image/avif"
+            />
+            <source
+              srcSet="/projects/component-test.webp"
+              type="image/webp"
+            />
+            <img
+              alt="Example component test"
+              loading="lazy"
+              src="/projects/component-test.jpg"
+            />
+          </picture>
         </div>
       </div>
       {/* <div className={cx(styles["cols"], styles["p24"])}>
