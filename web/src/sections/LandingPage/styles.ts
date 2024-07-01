@@ -92,38 +92,6 @@ export const styles = create({
       bg: "transparent"
     }
   },
-  hero: {
-    "&": {
-      alignItems: "center",
-      backgroundImage: `url("/hero/face.png"), url("/hero/hero.jpg")`,
-      backgroundPosition: "left top, center",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "350px 350px, cover",
-      boxShadow: "inset var(--shadow1), var(--shadow1)",
-      display: "flex",
-      height: "570px",
-      justifyContent: "center"
-    },
-    "& > div": {
-      backdropFilter: "blur(10px)",
-      borderRadius: "var(--8px)",
-      fontFamily: "var(--sans)",
-      fontWeight: "bold",
-      maskImage: `url("/hero/mask.png")`,
-      maskSize: "100% 100%",
-      p: "var(--32px)",
-      textAlign: "center",
-      textShadow: "var(--shadow0)",
-      WebkitBackdropFilter: "blur(10px)",
-      width: "fit-content"
-    },
-    "& p": {
-      fontSize: "var(--24px)",
-      lineHeight: 1.5,
-      m: 0,
-      maxWidth: "14em"
-    }
-  },
   root: {
     "*,*::before,*::after": {
       boxSizing: "inherit"

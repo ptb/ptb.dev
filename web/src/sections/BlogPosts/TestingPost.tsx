@@ -1,5 +1,5 @@
 /* eslint-disable @stylistic/jsx-child-element-spacing */
-import { css } from "@ptb/style/macro"
+import { css, cx } from "@ptb/style/index"
 import type { FC } from "react"
 
 import { BlogPost } from "./BlogPost"
@@ -219,17 +219,115 @@ export const TestingPost: FC = () => (
           </picture>
         </div>
       </div>
-      {/* <div className={cx(styles["cols"], styles["p24"])}>
+      <div className={styles["project"]}>
         <div>
           <h3>What is End-to-End (E2E) Testing?</h3>
           <p>
-            End-to-end testing involves testing entire application
+            End-to-end testing involves testing complete application
             workflows from start to finish, simulating real user
             scenarios.
           </p>
+          <p>
+            End-to-end tests ensure that all integrated components
+            work together as expected. These tests validate
+            interactions between different systems, such as
+            authentication, APIs, and third-party services, ensuring
+            seamless integration.
+          </p>
+          <p>
+            E2E tests help identify issues that may arise when
+            different parts of the system interact, which unit or
+            component tests are not designed to catch. These tests can
+            reduce the need for repetitive manual testing, freeing up
+            manual testers to focus on higher-value tasks.
+          </p>
         </div>
-        <div />
-      </div> */}
+        <div>
+          <picture>
+            <source
+              srcSet="/projects/e2e-test.avif"
+              type="image/avif"
+            />
+            <source
+              srcSet="/projects/e2e-test.webp"
+              type="image/webp"
+            />
+            <img
+              alt="Example end-to-end test"
+              loading="lazy"
+              src="/projects/e2e-test.jpg"
+            />
+          </picture>
+        </div>
+      </div>
+      <div className={cx(styles["cols"], styles["p24"])}>
+        <div>
+          <h3>What is Code Coverage?</h3>
+          <p>
+            Code coverage is a metric used in software testing to
+            measure the extent to which the source code of a program
+            is executed when a particular test suite runs. It provides
+            insights into which parts of the codebase are being tested
+            and which are not, helping to identify untested or
+            under-tested areas.
+          </p>
+          <p>
+            Code coverage is a valuable metric in software testing,
+            providing insights into how much of the codebase is
+            exercised by tests. While it is an important aspect of
+            testing, it should be used in conjunction with other
+            testing practices to ensure comprehensive and effective
+            test coverage. Achieving high code coverage can lead to
+            improved code quality and reliability, but it is crucial
+            to <strong>focus on the quality of tests</strong> rather
+            than just the coverage percentage.
+          </p>
+        </div>
+        <div>
+          <ul className={css({ m: 0 })}>
+            <li>
+              Code coverage helps identify parts of the code that are{" "}
+              <strong>not covered by tests</strong>.
+            </li>
+            <li>
+              Higher code coverage can{" "}
+              <strong>increase confidence when refactoring</strong>,
+              as tests can catch any regressions introduced during the
+              process.
+            </li>
+            <li>
+              Code coverage helps assess the effectiveness of the test
+              suite,{" "}
+              <strong>identifying inadequately tested parts</strong>{" "}
+              of an application.
+            </li>
+            <li>
+              High code coverage{" "}
+              <strong>does not guarantee the absence of bugs</strong>!
+              Tests may not cover all edge cases or potential error
+              conditions.
+            </li>
+            <li>
+              Aiming for{" "}
+              <strong>
+                100% test coverage is often unnecessary.
+              </strong>{" "}
+              Focus on high quality <em>useful</em> tests on critical
+              parts of the codebase. Writing superficial tests to
+              increase coverage can lead to a false sense of security.
+            </li>
+            <li>
+              Ideally,{" "}
+              <strong>
+                code coverage should measure all types of testing
+              </strong>
+              : unit, component, and end-to-end tests. However, it is
+              not necessary to test the same section of code with all
+              three methods, as this can be redundant.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </BlogPost>
 )
