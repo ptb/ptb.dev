@@ -73,5 +73,48 @@ export const ProjectPost: FC = () => (
         before such displays were commonplace.
       </p>
     </ProjectSection>
+    <ProjectSection
+      imgSrc="/projects/training.apple.com"
+      title="Apple Training and Certification"
+    >
+      <p>
+        <a href="https://web.archive.org/web/20080722095325/http://training.apple.com/">
+          Training and Certification
+        </a>{" "}
+        is a team within Apple providing training for IT
+        professionals, creatives, educators, and students. This team
+        develops course materials and provides direct instruction in
+        classrooms worldwide.
+      </p>
+      <p>
+        During my time with this team, I developed and deployed the
+        first public Ruby on Rails app at Apple. It enabled customers
+        to locate Apple and third-party training centers and classroom
+        training events worldwide. I created a workflow for injesting
+        third-party iCalendar feeds to display them on
+        training.apple.com.
+      </p>
+      <p>
+        I created this design shown here. We needed some images of
+        certificates, so we used my personal certifications as
+        examples. It might be hard to see, but that's my name on the
+        certificate in the foreground! 🤓
+      </p>
+      <picture>
+        <source
+          srcSet="/projects/ptb-cert.avif"
+          type="image/avif"
+        />
+        <source
+          srcSet="/projects/ptb-cert.webp"
+          type="image/webp"
+        />
+        <img
+          alt="Apple Certificate of Achievement"
+          src="/projects/ptb-cert.png"
+          style={{ boxShadow: "none", transform: "none" }}
+        />
+      </picture>
+    </ProjectSection>
   </BlogPost>
 )
