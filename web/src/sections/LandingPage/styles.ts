@@ -117,30 +117,6 @@ export const styles = create({
       WebkitBackdropFilter: "blur(10px)",
       width: "fit-content"
     },
-    "& h2": {
-      "&::before": {
-        animationDuration: ".5s",
-        animationIterationCount: "infinite",
-        animationName: {
-          "0%": {
-            transform: "rotate(10deg)"
-          },
-          "50%": {
-            transform: "rotate(15deg)"
-          },
-          "100%": {
-            transform: "rotate(10deg)"
-          }
-        },
-        content: "'👋🏻'",
-        display: "inline-block",
-        mr: "var(--16px)"
-      },
-      "alignItems": "center",
-      "display": "inline-flex",
-      "fontSize": "var(--32px)",
-      "m": 0
-    },
     "& p": {
       fontSize: "var(--24px)",
       lineHeight: 1.5,

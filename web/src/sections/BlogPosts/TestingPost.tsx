@@ -8,9 +8,9 @@ import { styles } from "./styles"
 export const TestingPost: FC = () => (
   <BlogPost tags={["code"]}>
     <div className={styles["post"]}>
-      <h3>
+      <h2>
         <a href="/code/testing">Comprehensive Testing for React</a>
-      </h3>
+      </h2>
       <p className={css({ px: 24 })}>
         Testing is a core practice of professional software
         development. In this article, I'm going to discuss{" "}
@@ -21,7 +21,7 @@ export const TestingPost: FC = () => (
         process before merging.
       </p>
       <div className={css({ p: 24 })}>
-        <h4 className={css({ m: 0 })}>Why Test?</h4>
+        <h3 className={css({ m: 0 })}>Why Test?</h3>
         <div
           className={css({
             display: "flex",
@@ -115,15 +115,15 @@ export const TestingPost: FC = () => (
       </div>
       <div className={styles["project"]}>
         <div>
-          <h4>What is Unit Testing?</h4>
+          <h3>What is Unit Testing?</h3>
           <p>
             Unit testing involves testing functions in isolation to
             ensure they work correctly. Ideally, unit tests are small
             and fast, focusing on specific pieces of code.
           </p>
-          <h4>
+          <h3>
             Stop Using <code>console.log</code>?
-          </h4>
+          </h3>
           <p>
             If you find yourself running a piece of code and using{" "}
             <code>console.log</code> to see the output, it's time to{" "}
@@ -162,7 +162,7 @@ export const TestingPost: FC = () => (
       </div>
       <div className={styles["project"]}>
         <div>
-          <h4>What is Component Testing?</h4>
+          <h3>What is Component Testing?</h3>
           <p>
             Component testing involves testing individual React
             components to ensure they render correctly and behave as
@@ -221,7 +221,7 @@ export const TestingPost: FC = () => (
       </div>
       {/* <div className={cx(styles["cols"], styles["p24"])}>
         <div>
-          <h4>What is End-to-End (E2E) Testing?</h4>
+          <h3>What is End-to-End (E2E) Testing?</h3>
           <p>
             End-to-end testing involves testing entire application
             workflows from start to finish, simulating real user

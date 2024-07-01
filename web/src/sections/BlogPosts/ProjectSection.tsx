@@ -11,7 +11,7 @@ export const ProjectSection: FC<
 > = ({ children, imgSrc, title }) => (
   <article className={styles["project"]}>
     <div>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       {children}
     </div>
     <div>

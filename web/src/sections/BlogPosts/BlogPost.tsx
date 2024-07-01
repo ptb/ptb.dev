@@ -14,10 +14,7 @@ export const BlogPost: FC<PropsWithChildren<{ tags: string[] }>> = ({
   >
     <header className={styles["header"]}>
       <div>
-        <ul
-          className={styles["tags"]}
-          role="navigation"
-        >
+        <ul className={styles["tags"]}>
           {tags.map((tag) => (
             <li key={tag}>
               <span

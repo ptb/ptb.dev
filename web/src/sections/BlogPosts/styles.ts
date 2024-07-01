@@ -40,15 +40,15 @@ export const styles = create({
     p: 24
   },
   post: {
-    "& h3": {
+    "& h2": {
       fontSize: 24,
       m: "24px"
     },
-    "& h3, & h4": {
+    "& h2, & h3": {
       fontFamily: "var(--sans)",
       textShadow: "1px 1px 2px rgba(0,0,0,0.4)"
     },
-    "& h4": {
+    "& h3": {
       fontSize: 20,
       m: "0 0 24px"
     }
@@ -69,7 +69,7 @@ export const styles = create({
       alignSelf: "center",
       textAlign: "center"
     },
-    "& h3": {
+    "& h2": {
       fontFamily: "var(--sans)",
       fontSize: 24,
       m: "0 0 24px",
