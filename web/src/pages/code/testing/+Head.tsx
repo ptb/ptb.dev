@@ -1,4 +1,4 @@
-import { Head as ParentHead } from "../../+Head"
+import { Head as ParentHead } from "@/pages/+Head"
 
 export const Head = () => (
   <>

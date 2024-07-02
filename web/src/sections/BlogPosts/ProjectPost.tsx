@@ -90,7 +90,7 @@ export const ProjectPost: FC = () => (
         During my time with this team, I developed and deployed the
         first public Ruby on Rails app at Apple. It enabled customers
         to locate Apple and third-party training centers and classroom
-        training events worldwide. I created a workflow for injesting
+        training events worldwide. I created a workflow for ingesting
         third-party iCalendar feeds to display them on
         training.apple.com.
       </p>
