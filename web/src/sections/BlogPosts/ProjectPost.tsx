@@ -100,7 +100,7 @@ export const ProjectPost: FC = () => (
         examples. It might be hard to see, but that's my name on the
         certificate in the foreground! 🤓
       </p>
-      <picture>
+      {/* <picture>
         <source
           srcSet="/projects/ptb-cert.avif"
           type="image/avif"
@@ -114,7 +114,7 @@ export const ProjectPost: FC = () => (
           src="/projects/ptb-cert.png"
           style={{ boxShadow: "none", transform: "none" }}
         />
-      </picture>
+      </picture> */}
     </ProjectSection>
   </BlogPost>
 )

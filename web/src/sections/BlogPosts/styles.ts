@@ -118,6 +118,13 @@ export const styles = create({
       textTransform: "capitalize",
       whiteSpace: "nowrap"
     },
+    "&[title*=about]::before": {
+      background:
+        "url(\"data:image/svg+xml,%3Csvg height='20' viewBox='0 0 120 120' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M41 110C60-46 149 44 60 71c-27 9-58-5-23-56' fill='none' stroke='%23321b1b' stroke-width='22'/%3E%3C/svg%3E\") 0 center no-repeat",
+      content: "''",
+      mr: 4,
+      size: 20
+    },
     "&[title*=code]::before": {
       background:
         "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath d='m64 16-20 88h12l20-88zM36 32 8 60l28 28 8-8-20-20 20-20zm48 0 28 28-28 28-8-8 20-20-20-20z' fill='%23321b1b'/%3E%3C/svg%3E\") 0 center no-repeat",
