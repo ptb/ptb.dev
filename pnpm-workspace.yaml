@@ -7,3 +7,6 @@ packages:
   - pkg/*
   - sql
   - web
+allowBuilds:
+  esbuild: true
+  lefthook: true

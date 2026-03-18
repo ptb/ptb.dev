@@ -9,7 +9,7 @@
   },
   "engines": {
     "node": "^20.9 || ^22",
-    "pnpm": "^9"
+    "pnpm": "^10"
   },
   "private": true,
   "scripts": {
